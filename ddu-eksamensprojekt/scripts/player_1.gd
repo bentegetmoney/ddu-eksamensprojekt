@@ -3,6 +3,9 @@ extends CharacterBody2D
 @onready var timer: Timer = $Timer
 @export var speed: float = 150
 @export var shootCooldown := 1.0
+@onready var global = get_node("/root/Global")
+
+var player_id = 1
 
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
@@ -20,7 +23,7 @@ func _process(delta):
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
-		ballDirection = direction  #gemmer retning til skud
+		ballDirection = direction#gemmer retning til skud
 
 	velocity = direction * speed
 	move_and_slide()
@@ -33,9 +36,8 @@ func _process(delta):
 	if ballDirection == Vector2.ZERO:
 		ballDirection = Vector2.RIGHT
 
-
 func shoot():
-	print("player 1 skyder")
+	print("player" , player_id , "skyder")
 	canShoot = false
 	timer.start(shootCooldown)
 
@@ -47,3 +49,10 @@ func shoot():
 
 func _on_timer_timeout() -> void:
 	canShoot = true
+
+func take_damage(amount: int):
+	global.hit1 += amount
+	print("Player 1 blev ramt! Hits: " + str(global.hit1))
+	if global.hit1 >= 3:
+		print("spiller " , player_id , " er død")
+		#die() der skal laves en funktion som dræber dem
