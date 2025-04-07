@@ -9,30 +9,29 @@ var ballDirection: Vector2 = Vector2.ZERO
 
 func _process(delta):
 	var direction = Vector2.ZERO
-	if Input.is_action_pressed("D"):
+	if Input.is_action_pressed("ui_right"):
 		direction.x += 1
-	if Input.is_action_pressed("A"):
+	if Input.is_action_pressed("ui_left"):
 		direction.x -= 1
-	if Input.is_action_pressed("S"):
+	if Input.is_action_pressed("ui_down"):
 		direction.y += 1
-	if Input.is_action_pressed("W"):
+	if Input.is_action_pressed("ui_up"):
 		direction.y -= 1
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
-		ballDirection = direction  #gemmer retning til skud
+		ballDirection = direction#gemmer retning til skud
 
 	velocity = direction * speed
 	move_and_slide()
 
 	#her skyder spilleren
-	if Input.is_action_just_pressed("F") and canShoot:
+	if Input.is_action_just_pressed("Space") and canShoot:
 		shoot()
 	
 	#Når man starter spillet og ikke kigger nogen steder hen, sidder bolden fast på spilleren. Nedenstående skyder den bare til højre i stedet :)
 	if ballDirection == Vector2.ZERO:
 		ballDirection = Vector2.RIGHT
-
 
 func shoot():
 	print("player 1 skyder")
@@ -42,7 +41,7 @@ func shoot():
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
 	bullet.owner_id = 1
-	bullet.direction = ballDirection.normalized()#retningen kuglen skal flyve i
+	bullet.direction = ballDirection.normalized()  # Retningen kuglen skal flyve i
 	get_parent().add_child(bullet)
 
 func _on_timer_timeout() -> void:

@@ -1,19 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://mfq7kx45ml00"]
+[gd_scene load_steps=4 format=3 uid="uid://8cvn1kjkpbra"]
 
-[ext_resource type="Script" path="res://Scripts/player_2.gd" id="1_tj47r"]
-[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_ncclh"]
+[ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
+[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_fassg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
 size = Vector2(120, 123)
 
-[node name="player2" type="CharacterBody2D"]
+[node name="player1" type="CharacterBody2D"]
 position = Vector2(520, 282)
 scale = Vector2(0.8, 0.8)
-script = ExtResource("1_tj47r")
+script = ExtResource("1_16ylk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("2_ncclh")
+texture = ExtResource("2_fassg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, 1.5)
@@ -21,5 +21,3 @@ scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_6ouei")
 
 [node name="Timer" type="Timer" parent="."]
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

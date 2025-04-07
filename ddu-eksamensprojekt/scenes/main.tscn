@@ -6,7 +6,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="player1" parent="." instance=ExtResource("1_gy3no")]
-position = Vector2(706, 313)
+position = Vector2(343, 309)
 
 [node name="player2" parent="." instance=ExtResource("2_urg25")]
-position = Vector2(456, 308)
+position = Vector2(812, 316)
