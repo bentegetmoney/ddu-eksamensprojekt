@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://d8eogw5g068q"]
+[gd_scene load_steps=4 format=3 uid="uid://d8eogw5g068q"]
 
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngr55"]
+bg_color = Color(0.988415, 0.664928, 0.6444, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.450458, 0.803829, 0.536216, 1)
+border_blend = true
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+shadow_color = Color(1, 1, 0.384314, 0.517647)
+shadow_size = 3
+
+[sub_resource type="Theme" id="Theme_exre7"]
+Button/styles/hover = null
+Button/styles/normal = SubResource("StyleBoxFlat_ngr55")
 
 [node name="startscreen" type="Control"]
 layout_mode = 3
@@ -31,16 +54,26 @@ alignment = 1
 
 [node name="start" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = SubResource("Theme_exre7")
+action_mode = 0
 text = "Start spil"
+autowrap_mode = 3
 
 [node name="tutorial" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+theme = SubResource("Theme_exre7")
+action_mode = 0
 text = "Tutorial"
+autowrap_mode = 3
 
 [node name="slut" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-text = "Slut spil"
+theme = SubResource("Theme_exre7")
+action_mode = 0
+text = "Slut spil
+"
+autowrap_mode = 3
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/tutorial" to="." method="_on_tutorial_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/slut" to="." method="_on_slut_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/tutorial" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/slut" to="." method="_on_start_pressed"]

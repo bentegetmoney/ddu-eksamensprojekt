@@ -1,3 +1,23 @@
-[gd_scene format=3 uid="uid://e3x5darghyhn"]
+[gd_scene load_steps=3 format=3 uid="uid://e3x5darghyhn"]
+
+[ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_mkfnu"]
+[ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_cejuj"]
 
 [node name="tutorial" type="Node2D"]
+
+[node name="player1" parent="." instance=ExtResource("1_mkfnu")]
+position = Vector2(338, 288)
+
+[node name="player2" parent="." instance=ExtResource("2_cejuj")]
+position = Vector2(722, 287)
+
+[node name="instructions" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="instructions"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
