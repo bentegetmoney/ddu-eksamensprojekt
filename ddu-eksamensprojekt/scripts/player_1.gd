@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @onready var timer: Timer = $Timer
 @export var speed: float = 150
-@export var shootCooldown := 1.0
 @onready var global = get_node("/root/Global")
 
 var player_id = 1
@@ -37,9 +36,9 @@ func _process(delta):
 		ballDirection = Vector2.RIGHT
 
 func shoot():
-	print("player" , player_id , "skyder")
+	print("player " , player_id , " skyder")
 	canShoot = false
-	timer.start(shootCooldown)
+	timer.start()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position

@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 @onready var timer: Timer = $Timer
 @export var speed: float = 150
-@export var shootCooldown := 1.0
 @onready var global = get_node("/root/Global")
 
 var player_id = 2
@@ -39,7 +38,7 @@ func _process(delta):
 func shoot():
 	print("player " , player_id , " skyder")
 	canShoot = false
-	timer.start(shootCooldown)
+	timer.start()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
@@ -53,6 +52,6 @@ func _on_timer_timeout() -> void:
 func take_damage(amount: int):
 	global.hit2 += amount
 	print("Player 2 blev ramt! Hits: " + str(global.hit2))
-	if global.hit2 >= global.max_hits:
-		print("spiller" + player_id + "er død")
+	if global.hit2 >= 3:
+		print("spiller " , player_id , " er død")
 		#die() der skal laves en funktion der dræber spilleren

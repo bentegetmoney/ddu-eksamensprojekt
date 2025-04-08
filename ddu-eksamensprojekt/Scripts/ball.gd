@@ -7,8 +7,8 @@ var owner_id: int = 1
 func _process(delta):
 	position += direction * speed * delta
 
-func _on_area_entered(area):
-	if area.is_in_group("player") and area.player_id != owner_id:
+func _on_body_entered(body) -> void:
+	if body.is_in_group("player") and body.player_id != owner_id:
 		print("Spiller rammes")
-		area.take_damage(1)
+		body.take_damage(1)
 		queue_free()#fjerner bolden
