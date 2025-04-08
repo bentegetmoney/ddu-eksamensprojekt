@@ -9,9 +9,5 @@ func _process(delta):
 
 func _on_body_entered(body) -> void:
 	if body.is_in_group("player") and body.player_id != owner_id:
-		
-		print("Spiller 2 rammes")
 		body.take_damage(1)
 		queue_free()#fjerner bolden
-		
-		
