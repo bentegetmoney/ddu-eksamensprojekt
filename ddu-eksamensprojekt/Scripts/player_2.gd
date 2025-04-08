@@ -42,7 +42,7 @@ func shoot():
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
-	bullet.owner_id = 1
+	bullet.owner_id = 2
 	bullet.direction = ballDirection.normalized()#Retningen kuglen skal flyve i
 	get_parent().add_child(bullet)
 
