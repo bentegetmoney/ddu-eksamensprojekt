@@ -1,27 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://d8eogw5g068q"]
+[gd_scene load_steps=5 format=3 uid="uid://d8eogw5g068q"]
 
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/burgery/Burgery.ttf" id="2_2qoeb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngr55"]
-bg_color = Color(0.667025, 0.0570675, 0.357433, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.450458, 0.803829, 0.536216, 1)
+resource_local_to_scene = false
+resource_name = ""
+content_margin_left = -1.0
+content_margin_top = -1.0
+content_margin_right = -1.0
+content_margin_bottom = -1.0
+bg_color = Color(0.988235, 0.960784, 0.780392, 1)
+draw_center = true
+skew = Vector2(0, 0)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+border_color = Color(0.627451, 0.807843, 0.85098, 1)
 border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-expand_margin_left = 2.0
-expand_margin_top = 2.0
-expand_margin_right = 2.0
-expand_margin_bottom = 2.0
-shadow_color = Color(1, 1, 0.384314, 0.517647)
-shadow_size = 3
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 8
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(1, 0.752941, 0.623529, 1)
+shadow_size = 23
+shadow_offset = Vector2(0, 0)
+anti_aliasing = true
+anti_aliasing_size = 1.0
 
 [sub_resource type="Theme" id="Theme_exre7"]
+default_font = ExtResource("2_2qoeb")
 Button/styles/normal = SubResource("StyleBoxFlat_ngr55")
 
 [node name="startscreen" type="Control"]
@@ -38,6 +52,8 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -12.0
+offset_right = -12.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 200
@@ -48,12 +64,15 @@ theme_override_constants/margin_bottom = 100
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 4
-theme_override_constants/separation = 8
+theme_override_constants/separation = 15
 alignment = 1
 
 [node name="start" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
+theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_fonts/font = ExtResource("2_2qoeb")
+theme_override_font_sizes/font_size = 70
 action_mode = 0
 text = "Start spil"
 autowrap_mode = 3
@@ -61,6 +80,9 @@ autowrap_mode = 3
 [node name="tutorial" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
+theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_fonts/font = ExtResource("2_2qoeb")
+theme_override_font_sizes/font_size = 70
 action_mode = 0
 text = "Tutorial"
 autowrap_mode = 3
@@ -68,6 +90,9 @@ autowrap_mode = 3
 [node name="slut" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
+theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_fonts/font = ExtResource("2_2qoeb")
+theme_override_font_sizes/font_size = 70
 action_mode = 0
 text = "Slut spil
 "

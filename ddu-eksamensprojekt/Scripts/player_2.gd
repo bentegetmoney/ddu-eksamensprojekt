@@ -54,5 +54,5 @@ func take_damage(amount: int):
 	global.hit2 += amount
 	print("Player 2 blev ramt! Hits: " + str(global.hit2))
 	if global.hit2 >= 3:
-		print("spiller" + player_id + "er død")
+		print("spiller " , player_id , " er død")
 		#die() der skal laves en funktion der dræber spilleren
