@@ -1,15 +1,20 @@
 extends Control
 
-@onready var animation: AnimationPlayer = $animation
+@onready var animation: AnimationPlayer = $Panel/animation
+var started = false
 
-func _process(delta):
-	if Global.hit1>=3:
-		#her skal der stå player 2 vandt
-		animation.play()
-	elif Global.hit2>=3:
-		#her skal der stå player 1 vandt
-		animation.play()
+func _process(_delta):
+	if started == false:
+		if Global.hit1>=3:
+			#her skal der stå player 2 vandt
+			started = true
+			animation.play()
+		elif Global.hit2>=3:
+			#her skal der stå player 1 vandt
+			started = true
+			$Panel.position.x+200
+			#animation.play()
 
-func _on_animation_animation_finished(anim_name: StringName) -> void:
+func _on_animation_animation_finished() -> void:
 	print("scenen skal nu skiftes til den næste scene")
-	#get_tree().change_scene_to_file(hmm her skal vi navngive filerne noget smart :) )
+	get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
