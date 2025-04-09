@@ -4,15 +4,7 @@
 [ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/burgery/Burgery.ttf" id="2_2qoeb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngr55"]
-resource_local_to_scene = false
-resource_name = ""
-content_margin_left = -1.0
-content_margin_top = -1.0
-content_margin_right = -1.0
-content_margin_bottom = -1.0
 bg_color = Color(0.988235, 0.960784, 0.780392, 1)
-draw_center = true
-skew = Vector2(0, 0)
 border_width_left = 15
 border_width_top = 15
 border_width_right = 15
@@ -23,16 +15,12 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
-corner_detail = 8
 expand_margin_left = 3.0
 expand_margin_top = 3.0
 expand_margin_right = 3.0
 expand_margin_bottom = 3.0
 shadow_color = Color(1, 0.752941, 0.623529, 1)
 shadow_size = 13
-shadow_offset = Vector2(0, 0)
-anti_aliasing = true
-anti_aliasing_size = 1.0
 
 [sub_resource type="Theme" id="Theme_exre7"]
 default_font = ExtResource("2_2qoeb")
