@@ -1,4 +1,40 @@
-[gd_scene format=3 uid="uid://dkrkvovfsutb3"]
+[gd_scene load_steps=4 format=3 uid="uid://dkrkvovfsutb3"]
+
+[sub_resource type="Animation" id="Animation_dmk3o"]
+resource_name = "swipe"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("winning:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-690, 165), Vector2(1300, 165)]
+}
+
+[sub_resource type="Animation" id="Animation_65f58"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("winning:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-690, 165)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ea1ar"]
+_data = {
+"RESET": SubResource("Animation_65f58"),
+"swipe": SubResource("Animation_dmk3o")
+}
 
 [node name="winningscreen" type="Control"]
 layout_mode = 3
@@ -7,3 +43,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="winning" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1842.0
+offset_top = -159.0
+offset_right = -1802.0
+offset_bottom = -119.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(16, 9.34615)
+
+[node name="animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ea1ar")
+}
