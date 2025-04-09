@@ -1,4 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkrkvovfsutb3"]
+[gd_scene load_steps=5 format=3 uid="uid://dkrkvovfsutb3"]
+
+[ext_resource type="Script" path="res://Scripts/winningscreen.gd" id="1_u2gum"]
 
 [sub_resource type="Animation" id="Animation_dmk3o"]
 resource_name = "swipe"
@@ -44,6 +46,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_u2gum")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -64,3 +67,5 @@ scale = Vector2(16, 9.34615)
 libraries = {
 "": SubResource("AnimationLibrary_ea1ar")
 }
+
+[connection signal="animation_finished" from="animation" to="." method="_on_animation_animation_finished"]
