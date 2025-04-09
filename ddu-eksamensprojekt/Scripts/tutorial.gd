@@ -4,9 +4,9 @@ var has_moved = false
 var has_shot = false
 var taken_health = false
 
-@onready var move = $movement
-@onready var attack = $attack
-@onready var health = $health
+@onready var move = $instructions/movement
+@onready var attack = $instructions/attack
+@onready var health = $instructions/health
 @onready var timer: Timer = $Timer
 
 func _process(delta):

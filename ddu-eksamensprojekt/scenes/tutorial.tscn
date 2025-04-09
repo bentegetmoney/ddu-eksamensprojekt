@@ -56,6 +56,7 @@ offset_bottom = -226.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(88.7454, 3562.35)
+color = Color(0.296228, 0.141583, 0.417044, 1)
 
 [node name="Timer" type="Timer" parent="."]
 
