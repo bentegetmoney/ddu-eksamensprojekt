@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_fassg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
-size = Vector2(125, 123)
+size = Vector2(120, 123)
 
 [node name="player1" type="CharacterBody2D" groups=["player"]]
 position = Vector2(520, 282)
@@ -16,7 +16,7 @@ scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_fassg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.5)
+position = Vector2(-2, 1.5)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_6ouei")
 

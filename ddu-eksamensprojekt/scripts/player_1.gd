@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var timer: Timer = $Timer
 @export var speed: float = 150
 @onready var global = get_node("/root/Global")
+@onready var charge_1: ProgressBar = $Charge1
 
 var player_id = 1
 
@@ -10,6 +11,7 @@ var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
 
 func _process(delta):
+	charge_1.value += delta
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("D"):
 		direction.x += 1
@@ -29,7 +31,12 @@ func _process(delta):
 
 	#her skyder spilleren
 	if Input.is_action_just_pressed("F") and canShoot:
+		print("Charging")
+		charge_1.value = 0
+		charge_1.visible = true
+	if Input.is_action_just_released("F") and canShoot:
 		shoot()
+		charge_1.visible = false
 	
 	#Når man starter spillet og ikke kigger nogen steder hen, sidder bolden fast på spilleren. Nedenstående skyder den bare til højre i stedet :)
 	if ballDirection == Vector2.ZERO:
@@ -43,7 +50,7 @@ func shoot():
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
 	bullet.owner_id = 1
-	bullet.direction = ballDirection.normalized()#retningen kuglen skal flyve i
+	bullet.direction = ballDirection.normalized() * charge_1.value #retningen kuglen skal flyve i
 	get_parent().add_child(bullet)
 
 func _on_timer_timeout() -> void:
