@@ -4,6 +4,10 @@ extends Control
 
 func _process(delta):
 	if Global.hit1>=3:
+		#her skal der stå player 2 vandt
+		animation.play()
+	elif Global.hit2>=3:
+		#her skal der stå player 1 vandt
 		animation.play()
 
 func _on_animation_animation_finished(anim_name: StringName) -> void:
