@@ -29,7 +29,7 @@ expand_margin_top = 3.0
 expand_margin_right = 3.0
 expand_margin_bottom = 3.0
 shadow_color = Color(1, 0.752941, 0.623529, 1)
-shadow_size = 23
+shadow_size = 13
 shadow_offset = Vector2(0, 0)
 anti_aliasing = true
 anti_aliasing_size = 1.0
@@ -99,5 +99,5 @@ text = "Slut spil
 autowrap_mode = 3
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/tutorial" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/slut" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/slut" to="." method="_on_slut_pressed"]
