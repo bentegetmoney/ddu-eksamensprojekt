@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb06w0y8vrkaj"
-path="res://.godot/imported/pommes frites.png-8f08932db3d329662213d92de88820d2.ctex"
+path="res://.godot/imported/pommes frites.png-e992f646fb29f426c4805aafd01a790c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/karakterer/pommes frites.png"
-dest_files=["res://.godot/imported/pommes frites.png-8f08932db3d329662213d92de88820d2.ctex"]
+source_file="res://Assets/karakterer/pommes frites.png"
+dest_files=["res://.godot/imported/pommes frites.png-e992f646fb29f426c4805aafd01a790c.ctex"]
 
 [params]
 
