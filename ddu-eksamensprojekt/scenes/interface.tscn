@@ -1,9 +1,17 @@
 [gd_scene format=3 uid="uid://isdv4xg5cjr6"]
 
-[node name="interface" type="Control"]
-layout_mode = 3
-anchors_preset = 15
+[node name="interface" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "rawr"
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
 anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -50.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "health"
