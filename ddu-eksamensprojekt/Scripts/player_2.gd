@@ -43,7 +43,7 @@ func shoot():
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
-	bullet.owner_id = 1
+	bullet.owner_id = 2
 	bullet.direction = ballDirection.normalized()#Retningen kuglen skal flyve i
 	get_parent().add_child(bullet)
 
@@ -53,6 +53,6 @@ func _on_timer_timeout() -> void:
 func take_damage(amount: int):
 	global.hit2 += amount
 	print("Player 2 blev ramt! Hits: " + str(global.hit2))
-	if global.hit2 >= global.max_hits:
+	if global.hit2 >= 3:
 		print("spiller" + player_id + "er død")
 		#die() der skal laves en funktion der dræber spilleren
