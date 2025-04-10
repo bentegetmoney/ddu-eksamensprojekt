@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7lmkfrcd4s4y"
-path="res://.godot/imported/roblox_godkval.png-25b1814ddeed0a8b2e2e99b0208bacae.ctex"
+uid="uid://b71xakj5dxox5"
+path="res://.godot/imported/gåben 2.png-19d149d1c559b54a33f428405b11153e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ansigter/roblox_godkval.png"
-dest_files=["res://.godot/imported/roblox_godkval.png-25b1814ddeed0a8b2e2e99b0208bacae.ctex"]
+source_file="res://assets/arme og ben/gåben 2.png"
+dest_files=["res://.godot/imported/gåben 2.png-19d149d1c559b54a33f428405b11153e.ctex"]
 
 [params]
 

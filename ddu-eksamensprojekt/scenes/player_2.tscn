@@ -1,8 +1,45 @@
-[gd_scene load_steps=5 format=3 uid="uid://mfq7kx45ml00"]
+[gd_scene load_steps=11 format=3 uid="uid://mfq7kx45ml00"]
 
 [ext_resource type="Script" path="res://scripts/player_2.gd" id="1_tj47r"]
 [ext_resource type="Texture2D" uid="uid://cp3m3mv1fr2wn" path="res://assets/karakterer/is.png" id="2_af2e0"]
+[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://assets/arme og ben/ben2.png" id="2_bloic"]
 [ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_7w1k4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aaj74"]
+atlas = ExtResource("2_bloic")
+region = Rect2(0, 178, 160, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgb5s"]
+atlas = ExtResource("2_bloic")
+region = Rect2(160, 178, 160, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5nhw"]
+atlas = ExtResource("2_bloic")
+region = Rect2(320, 178, 160, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0y1p"]
+atlas = ExtResource("2_bloic")
+region = Rect2(480, 178, 160, 178)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_asnyb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aaj74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgb5s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5nhw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0y1p")
+}],
+"loop": true,
+"name": &"ben",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
 size = Vector2(143.75, 314.063)
@@ -11,6 +48,14 @@ size = Vector2(143.75, 314.063)
 position = Vector2(520, 282)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tj47r")
+
+[node name="ben" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.25, 137.5)
+scale = Vector2(1, 1)
+sprite_frames = SubResource("SpriteFrames_asnyb")
+animation = &"ben"
+autoplay = "ben"
+frame_progress = 0.834425
 
 [node name="figur" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
