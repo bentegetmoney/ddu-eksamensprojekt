@@ -1,23 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://8cvn1kjkpbra"]
+[gd_scene load_steps=5 format=3 uid="uid://8cvn1kjkpbra"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
-[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_fassg"]
+[ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://assets/karakterer/burger.png" id="2_3gxhg"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
-size = Vector2(125, 123)
+size = Vector2(217.188, 162.5)
 
 [node name="player1" type="CharacterBody2D" groups=["player"]]
 position = Vector2(520, 282)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_16ylk")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("2_fassg")
+[node name="figur" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_3gxhg")
+
+[node name="ansigt" type="Sprite2D" parent="."]
+position = Vector2(-2.5, -28.75)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("3_61wyc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.5)
-scale = Vector2(0.8, 0.8)
+position = Vector2(-1.875, -7.5)
+scale = Vector2(0.799999, 0.799999)
 shape = SubResource("RectangleShape2D_6ouei")
 
 [node name="Timer" type="Timer" parent="."]

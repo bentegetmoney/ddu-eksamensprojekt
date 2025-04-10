@@ -1,22 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://mfq7kx45ml00"]
+[gd_scene load_steps=5 format=3 uid="uid://mfq7kx45ml00"]
 
 [ext_resource type="Script" path="res://scripts/player_2.gd" id="1_tj47r"]
-[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_ncclh"]
+[ext_resource type="Texture2D" uid="uid://cp3m3mv1fr2wn" path="res://assets/karakterer/is.png" id="2_af2e0"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_7w1k4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
-size = Vector2(125, 124.313)
+size = Vector2(143.75, 314.063)
 
 [node name="player2" type="CharacterBody2D" groups=["player"]]
 position = Vector2(520, 282)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tj47r")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.8, 0.8)
-texture = ExtResource("2_ncclh")
+[node name="figur" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_af2e0")
+
+[node name="ansigt" type="Sprite2D" parent="."]
+position = Vector2(1.25, -51.25)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("3_7w1k4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 0.975006)
+position = Vector2(1.25, 1.875)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_6ouei")
 
