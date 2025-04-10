@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xlea3j2whw2p"
-path="res://.godot/imported/pomfrit.png-d80c2d4993eb5cf99ab9d8b5c7444885.ctex"
+path="res://.godot/imported/pomfrit.png-26ce719650472e1c36f52a1645a12f39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/våben/pomfrit.png"
-dest_files=["res://.godot/imported/pomfrit.png-d80c2d4993eb5cf99ab9d8b5c7444885.ctex"]
+source_file="res://assets/våben/pomfrit.png"
+dest_files=["res://.godot/imported/pomfrit.png-26ce719650472e1c36f52a1645a12f39.ctex"]
 
 [params]
 
