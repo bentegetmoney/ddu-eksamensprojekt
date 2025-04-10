@@ -8,12 +8,12 @@ func _process(_delta):
 		if Global.hit1>=3:
 			#her skal der stå player 2 vandt
 			started = true
-			animation.play()
+			animation.play("Animation") #den hedder Animation når man trykker på animationen og kigger ende på navnet!
 		elif Global.hit2>=3:
 			#her skal der stå player 1 vandt
 			started = true
-			$Panel.position.x+200
-			#animation.play()
+			#$Panel.position.x+200
+			animation.play("Animation")
 
 func _on_animation_animation_finished() -> void:
 	print("scenen skal nu skiftes til den næste scene")

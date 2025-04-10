@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dkrkvovfsutb3"]
+[gd_scene load_steps=6 format=3 uid="uid://dkrkvovfsutb3"]
 
 [ext_resource type="Script" path="res://scripts/winningscreen.gd" id="1_u2gum"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/burgery/Burgery.ttf" id="2_ltci7"]
 
 [sub_resource type="Animation" id="Animation_65f58"]
 length = 5.0
@@ -55,9 +56,9 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -1842.0
+offset_left = 148.0
 offset_top = -159.0
-offset_right = -1802.0
+offset_right = 188.0
 offset_bottom = -119.0
 grow_horizontal = 0
 grow_vertical = 2
@@ -73,6 +74,8 @@ libraries = {
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("2_ltci7")
+theme_override_font_sizes/font_size = 0
 text = "player vandt"
 
 [connection signal="animation_finished" from="Panel/animation" to="." method="_on_animation_animation_finished"]
