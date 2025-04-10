@@ -51,7 +51,6 @@ script = ExtResource("1_tj47r")
 
 [node name="ben" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1.25, 137.5)
-scale = Vector2(1, 1)
 sprite_frames = SubResource("SpriteFrames_asnyb")
 animation = &"ben"
 autoplay = "ben"
