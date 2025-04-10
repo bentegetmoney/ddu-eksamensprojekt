@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-@onready var timer: Timer = $Timer
 @export var speed: float = 150
 @onready var global = get_node("/root/Global")
 @onready var charge_2: ProgressBar = $charge2
@@ -44,8 +43,6 @@ func _process(delta):
 
 func shoot():
 	print("player " , player_id , " skyder")
-	canShoot = false
-	timer.start()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position

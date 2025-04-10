@@ -30,13 +30,13 @@ func _process(delta):
 	move_and_slide()
 
 	#her skyder spilleren
-	if Input.is_action_just_pressed("F") and canShoot:
+	if Input.is_action_just_pressed("F"):
 		print("Charging")
 		charge_1.value = 0
 		charge_1.visible = true
-	if Input.is_action_just_released("F") and canShoot:
-		shoot()
+	if Input.is_action_just_released("F"):
 		charge_1.visible = false
+		shoot()
 	
 	#Når man starter spillet og ikke kigger nogen steder hen, sidder bolden fast på spilleren. Nedenstående skyder den bare til højre i stedet :)
 	if ballDirection == Vector2.ZERO:
@@ -44,8 +44,7 @@ func _process(delta):
 
 func shoot():
 	print("player " , player_id , " skyder")
-	canShoot = false
-	timer.start()
+	
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.position = position
@@ -53,8 +52,7 @@ func shoot():
 	bullet.direction = ballDirection.normalized() * charge_1.value #retningen kuglen skal flyve i
 	get_parent().add_child(bullet)
 
-func _on_timer_timeout() -> void:
-	canShoot = true
+
 
 func take_damage(amount: int):
 	global.hit1 += amount
