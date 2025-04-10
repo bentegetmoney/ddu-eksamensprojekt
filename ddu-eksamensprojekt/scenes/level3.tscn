@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvdx53lw6x0io"]
+
+[ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_ovqfe"]
+[ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_f0c1b"]
+[ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="3_xvoio"]
+
+[node name="level 3" type="Node2D"]
+
+[node name="player1" parent="." instance=ExtResource("1_ovqfe")]
+
+[node name="player2" parent="." instance=ExtResource("2_f0c1b")]
+
+[node name="nextLvl" parent="." instance=ExtResource("3_xvoio")]

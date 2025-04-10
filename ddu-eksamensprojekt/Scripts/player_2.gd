@@ -5,10 +5,6 @@ extends CharacterBody2D
 @onready var global = get_node("/root/Global")
 @onready var charge_2: ProgressBar = $charge2
 
-@onready var figur = $figur
-@onready var ben = $ben
-@onready var ansigt = $ansigt
-
 var player_id = 2
 
 var canShoot: bool = true
@@ -25,35 +21,6 @@ func _process(delta):
 		direction.y += 1
 	if Input.is_action_pressed("ui_up"):
 		direction.y -= 1
-
-# flip
-	var flip_direction = 0
-	
-	if Input.is_action_pressed("ui_left"):
-		flip_direction -= 1 # venstre
-	if Input.is_action_pressed("ui_right"):
-		flip_direction += 1 # højre
-	
-	# flipper sprite
-	if flip_direction > 0:
-		figur.flip_h = false
-		ben.flip_h = false
-		ansigt.flip_h = false
-	elif flip_direction < 0:
-		figur.flip_h = true
-		ben.flip_h = true
-		ansigt.flip_h = true
-	
-	# if Global.hiit == false: # eventuelt
-		if flip_direction == 0:
-			ben.play("idle") # selve animationen mangler
-			#print(flip_direction)
-		else:
-			ben.play("run")
-			#print(flip_direction)
-	
-
-
 
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()

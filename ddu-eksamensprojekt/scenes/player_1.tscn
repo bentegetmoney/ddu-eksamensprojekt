@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
 [ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://assets/karakterer/burger.png" id="2_3gxhg"]
 [ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://assets/arme og ben/ben2.png" id="2_vln7u"]
-[ext_resource type="Texture2D" uid="uid://g1jovqmvr4jf" path="res://assets/ansigter/roblox.png" id="4_3eusk"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcinx"]
 atlas = ExtResource("2_vln7u")
@@ -37,24 +37,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_7esl0")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fcinx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_weoni")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gdq0y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7esl0")
-}],
-"loop": true,
-"name": &"run",
+"name": &"ben",
 "speed": 10.0
 }]
 
@@ -69,8 +52,9 @@ script = ExtResource("1_16ylk")
 [node name="ben" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1.25, 57.5)
 sprite_frames = SubResource("SpriteFrames_t2y26")
-animation = &"idle"
-autoplay = "idle"
+animation = &"ben"
+autoplay = "ben"
+frame_progress = 0.991667
 
 [node name="figur" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
@@ -79,7 +63,7 @@ texture = ExtResource("2_3gxhg")
 [node name="ansigt" type="Sprite2D" parent="."]
 position = Vector2(-2.5, -28.75)
 scale = Vector2(0.18, 0.18)
-texture = ExtResource("4_3eusk")
+texture = ExtResource("3_61wyc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.875, -7.5)
