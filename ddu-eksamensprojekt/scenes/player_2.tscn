@@ -20,6 +20,8 @@ position = Vector2(0, 0.975006)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_6ouei")
 
+[node name="Timer" type="Timer" parent="."]
+
 [node name="charge2" type="ProgressBar" parent="."]
 visible = false
 offset_left = -45.0
@@ -28,3 +30,5 @@ offset_right = 43.0
 offset_bottom = -56.75
 max_value = 1.0
 show_percentage = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

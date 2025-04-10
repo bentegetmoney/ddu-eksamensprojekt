@@ -5,7 +5,7 @@ var direction: Vector2 = Vector2.RIGHT
 var owner_id: int = 0
 
 func _process(delta):
-	position += direction * speed * delta * 2
+	position += direction * speed * delta
 
 func _on_body_entered(body) -> void:
 	if body.is_in_group("player") and body.player_id != owner_id:
