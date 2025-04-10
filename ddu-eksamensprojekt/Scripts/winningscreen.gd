@@ -15,6 +15,6 @@ func _process(_delta):
 			#$Panel.position.x+200
 			animation.play("Animation")
 
-func _on_animation_animation_finished() -> void:
+func _on_animation_animation_finished(Animation) -> void:
 	print("scenen skal nu skiftes til den næste scene")
 	get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
