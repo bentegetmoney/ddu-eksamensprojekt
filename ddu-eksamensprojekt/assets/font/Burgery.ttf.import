@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://y7kkyve0lbfw"
-path="res://.godot/imported/Burgery.ttf-bc646a6a151e104e34508d1ea27c5efb.fontdata"
+path="res://.godot/imported/Burgery.ttf-12650bedef6f3149dd3b9a89ddd04885.fontdata"
 
 [deps]
 
-source_file="res://Assets/burgery/Burgery.ttf"
-dest_files=["res://.godot/imported/Burgery.ttf-bc646a6a151e104e34508d1ea27c5efb.fontdata"]
+source_file="res://Assets/font/Burgery.ttf"
+dest_files=["res://.godot/imported/Burgery.ttf-12650bedef6f3149dd3b9a89ddd04885.fontdata"]
 
 [params]
 
