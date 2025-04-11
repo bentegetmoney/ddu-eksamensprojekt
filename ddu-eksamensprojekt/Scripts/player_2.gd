@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var speed: float = 150
 @onready var global = get_node("/root/Global")
 @onready var charge_2: ProgressBar = $charge2
+@onready var ben: AnimatedSprite2D = $ben
 
 var player_id = 2
 
@@ -25,9 +26,21 @@ func _process(delta):
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
 		ballDirection = direction#gemmer retning til skud
-
-	velocity = direction * speed
-	move_and_slide()
+		
+		velocity = direction * speed
+		move_and_slide()
+		
+		if !ben.is_playing() or ben.animation != "ben":
+			ben.play("ben")
+			
+			
+	
+	else:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		
+		if !ben.is_playing() or ben.animation != "stationary":
+			ben.play("stationary")
 	
 	#her skyder spilleren
 	if Input.is_action_just_pressed("Space") and canShoot:

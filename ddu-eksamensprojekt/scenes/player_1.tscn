@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://8cvn1kjkpbra"]
+[gd_scene load_steps=20 format=3 uid="uid://8cvn1kjkpbra"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
-[ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://assets/karakterer/burger.png" id="2_3gxhg"]
-[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://assets/arme og ben/ben2.png" id="2_vln7u"]
-[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
+[ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://Assets/karakterer/burger.png" id="2_3gxhg"]
+[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://Assets/arme og ben/ben2.png" id="2_vln7u"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://Assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcinx"]
 atlas = ExtResource("2_vln7u")
@@ -21,6 +21,42 @@ region = Rect2(320, 146, 160, 146)
 atlas = ExtResource("2_vln7u")
 region = Rect2(480, 146, 160, 146)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_2apjh"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(0, 146, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pw588"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(160, 146, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30np5"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(320, 146, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ver0"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(480, 146, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oua7k"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(0, 438, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy5ci"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(160, 438, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fhbg"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(320, 438, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sx6mu"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(480, 438, 160, 146)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xck44"]
+atlas = ExtResource("2_vln7u")
+region = Rect2(0, 730, 160, 146)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_t2y26"]
 animations = [{
 "frames": [{
@@ -35,10 +71,42 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_7esl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2apjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pw588")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30np5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ver0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oua7k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy5ci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fhbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sx6mu")
 }],
 "loop": true,
 "name": &"ben",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xck44")
+}],
+"loop": true,
+"name": &"stationary",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
@@ -55,7 +123,6 @@ scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_t2y26")
 animation = &"ben"
 autoplay = "ben"
-frame_progress = 0.991667
 
 [node name="figur" type="Sprite2D" parent="."]
 scale = Vector2(0.9, 0.9)
