@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://ddul8vx7ew6wp"]
 
 [ext_resource type="Script" path="res://scripts/next_lvl.gd" id="1_h3cdb"]
-[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/burgery/Burgery.ttf" id="3_skr24"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="3_skr24"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nyni5"]
 bg_color = Color(0.264239, 0.664707, 0.720754, 1)

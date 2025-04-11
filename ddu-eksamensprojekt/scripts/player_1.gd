@@ -63,5 +63,5 @@ func take_damage(amount: int):
 		#die() der skal laves en funktion som dræber dem. hmm nej det er vel bare inde i nextlvl
 
 func take_slow(amount: int):
-	speed+=amount
+	speed=amount
 	print("player er slowed")

@@ -8,10 +8,12 @@ script/source = "extends Node2D
 func _on_body_entered(body):
 	if body.is_in_group(\"player\"):
 		body.take_slow(100)
+		print(\"player slowed\")
 
 func _on_body_exited(body: Node2D) -> void:
-	body.take_slow(150)
-	
+	if body.is_in_group(\"player\"):
+		body.take_slow(150)
+		print(\"player unslowed\")
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ncx68"]
