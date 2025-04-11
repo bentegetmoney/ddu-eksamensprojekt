@@ -1,11 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvl2nry5qo31c"]
+[gd_scene load_steps=4 format=3 uid="uid://c2dx0j2dmjt1d"]
 
 [ext_resource type="Texture2D" uid="uid://d3yma1xbea7et" path="res://assets/map objects/ketchup.png" id="1_gq15b"]
 
-[sub_resource type="GDScript" id="GDScript_h85a3"]
-script/source = "extends Node2D
+[sub_resource type="GDScript" id="GDScript_ksl3r"]
+script/source = "extends Area2D
 
+func _ready() -> void:
+	print(\"hej\")
+	
 func _on_body_entered(body):
+	print(\"player unslowed\")
 	if body.is_in_group(\"player\"):
 		body.take_slow(100)
 		print(\"player slowed\")
@@ -21,7 +25,7 @@ radius = 45.0126
 height = 222.016
 
 [node name="sauce" type="Area2D"]
-script = SubResource("GDScript_h85a3")
+script = SubResource("GDScript_ksl3r")
 
 [node name="sauce" type="Sprite2D" parent="."]
 texture = ExtResource("1_gq15b")

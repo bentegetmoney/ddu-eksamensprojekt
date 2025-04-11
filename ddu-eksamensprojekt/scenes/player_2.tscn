@@ -113,6 +113,7 @@ animations = [{
 size = Vector2(70.3125, 145.312)
 
 [node name="player2" type="CharacterBody2D" groups=["player"]]
+top_level = true
 position = Vector2(520, 282)
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tj47r")
