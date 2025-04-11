@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://mfq7kx45ml00"]
 
 [ext_resource type="Script" path="res://scripts/player_2.gd" id="1_tj47r"]
-[ext_resource type="Texture2D" uid="uid://cp3m3mv1fr2wn" path="res://assets/karakterer/is.png" id="2_af2e0"]
-[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://assets/arme og ben/ben2.png" id="2_bloic"]
-[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_7w1k4"]
+[ext_resource type="Texture2D" uid="uid://cp3m3mv1fr2wn" path="res://Assets/karakterer/is.png" id="2_af2e0"]
+[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://Assets/arme og ben/ben2.png" id="2_bloic"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://Assets/ansigter/roblox_godkval3.png" id="3_7w1k4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aaj74"]
 atlas = ExtResource("2_bloic")
@@ -42,7 +42,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
-size = Vector2(143.75, 314.063)
+size = Vector2(70.3125, 145.312)
 
 [node name="player2" type="CharacterBody2D" groups=["player"]]
 position = Vector2(520, 282)
@@ -50,23 +50,23 @@ scale = Vector2(0.8, 0.8)
 script = ExtResource("1_tj47r")
 
 [node name="ben" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1.25, 137.5)
+position = Vector2(-1.25, 73.75)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_asnyb")
 animation = &"ben"
 autoplay = "ben"
 frame_progress = 0.834425
 
 [node name="figur" type="Sprite2D" parent="."]
-scale = Vector2(2, 2)
 texture = ExtResource("2_af2e0")
 
 [node name="ansigt" type="Sprite2D" parent="."]
-position = Vector2(1.25, -51.25)
-scale = Vector2(0.18, 0.18)
+position = Vector2(0, -23.75)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_7w1k4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.25, 1.875)
+position = Vector2(1.25, 3.75)
 scale = Vector2(0.8, 0.8)
 shape = SubResource("RectangleShape2D_6ouei")
 

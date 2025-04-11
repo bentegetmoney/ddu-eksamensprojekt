@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbsoskl20jrbo"
-path="res://.godot/imported/ben2.png-06f4577bed0feb732f99708009689da7.ctex"
+path="res://.godot/imported/ben2.png-55c73388edc3511d55070fb2c491cf65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/arme og ben/ben2.png"
-dest_files=["res://.godot/imported/ben2.png-06f4577bed0feb732f99708009689da7.ctex"]
+source_file="res://Assets/arme og ben/ben2.png"
+dest_files=["res://.godot/imported/ben2.png-55c73388edc3511d55070fb2c491cf65.ctex"]
 
 [params]
 

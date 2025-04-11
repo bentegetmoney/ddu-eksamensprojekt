@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://8cvn1kjkpbra"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
-[ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://assets/karakterer/burger.png" id="2_3gxhg"]
-[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://assets/arme og ben/ben2.png" id="2_vln7u"]
-[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
+[ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://Assets/karakterer/burger.png" id="2_3gxhg"]
+[ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://Assets/arme og ben/ben2.png" id="2_vln7u"]
+[ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://Assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcinx"]
 atlas = ExtResource("2_vln7u")
@@ -42,7 +42,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ouei"]
-size = Vector2(217.188, 162.5)
+size = Vector2(210, 145.625)
 
 [node name="player1" type="CharacterBody2D" groups=["player"]]
 position = Vector2(520, 282)
@@ -50,24 +50,25 @@ scale = Vector2(0.8, 0.8)
 script = ExtResource("1_16ylk")
 
 [node name="ben" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1.25, 57.5)
+position = Vector2(-1.25, 42.5)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_t2y26")
 animation = &"ben"
 autoplay = "ben"
 frame_progress = 0.991667
 
 [node name="figur" type="Sprite2D" parent="."]
-scale = Vector2(1.5, 1.5)
+scale = Vector2(0.9, 0.9)
 texture = ExtResource("2_3gxhg")
 
 [node name="ansigt" type="Sprite2D" parent="."]
-position = Vector2(-2.5, -28.75)
+position = Vector2(0, 1.25)
 scale = Vector2(0.18, 0.18)
 texture = ExtResource("3_61wyc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1.875, -7.5)
-scale = Vector2(0.799999, 0.799999)
+position = Vector2(-1.19209e-07, 7.39098e-06)
+scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_6ouei")
 
 [node name="Timer" type="Timer" parent="."]
