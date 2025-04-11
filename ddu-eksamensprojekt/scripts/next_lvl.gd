@@ -24,7 +24,7 @@ func nextLvl():
 			Global.hit2 = 0
 			started = true
 			animation.play("ani")
-			
+
 #bane skifter
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if level < 5 && level > 0:
