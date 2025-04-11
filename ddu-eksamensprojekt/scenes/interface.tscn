@@ -1,17 +1,57 @@
-[gd_scene format=3 uid="uid://isdv4xg5cjr6"]
+[gd_scene load_steps=6 format=3 uid="uid://isdv4xg5cjr6"]
+
+[ext_resource type="Script" path="res://scripts/interface.gd" id="1_7yavy"]
+[ext_resource type="Texture2D" uid="uid://o1lpti5orywd" path="res://assets/Skilte/red.png" id="1_dfq3e"]
+[ext_resource type="Texture2D" uid="uid://my4vmauuoh3m" path="res://assets/Skilte/blue.png" id="2_4v0aj"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="3_85maw"]
+
+[sub_resource type="Theme" id="Theme_upo2c"]
 
 [node name="interface" type="CanvasLayer"]
+script = ExtResource("1_7yavy")
 
-[node name="Label" type="Label" parent="."]
+[node name="pl1" type="PanelContainer" parent="."]
 offset_right = 40.0
-offset_bottom = 23.0
-text = "rawr"
+offset_bottom = 40.0
 
-[node name="Label2" type="Label" parent="."]
+[node name="player1" type="Sprite2D" parent="pl1"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_dfq3e")
+centered = false
+
+[node name="Label" type="Label" parent="pl1/player1"]
+top_level = true
+offset_left = 50.0
+offset_top = 70.0
+offset_right = 90.0
+offset_bottom = 93.0
+scale = Vector2(2, 2)
+theme = SubResource("Theme_upo2c")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_85maw")
+theme_override_font_sizes/font_size = 20
+
+[node name="pl2" type="PanelContainer" parent="."]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -50.0
-offset_bottom = 23.0
+offset_left = -40.0
+offset_bottom = 40.0
 grow_horizontal = 0
-text = "health"
+
+[node name="Sprite2D" type="Sprite2D" parent="pl2"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_4v0aj")
+centered = false
+offset = Vector2(-190, 0)
+
+[node name="Label" type="Label" parent="pl2/Sprite2D"]
+top_level = true
+offset_left = 50.0
+offset_top = 70.0
+offset_right = 90.0
+offset_bottom = 93.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_85maw")
+theme_override_font_sizes/font_size = 20
