@@ -14,8 +14,10 @@ func _process(delta):
 	charge_1.value += delta
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("D"):
+		ben.flip_h = false
 		direction.x += 1
 	if Input.is_action_pressed("A"):
+		ben.flip_h = true
 		direction.x -= 1
 	if Input.is_action_pressed("S"):
 		direction.y += 1

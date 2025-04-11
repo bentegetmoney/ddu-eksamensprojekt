@@ -124,7 +124,6 @@ scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_asnyb")
 animation = &"ben"
 autoplay = "ben"
-flip_h = true
 
 [node name="figur" type="Sprite2D" parent="."]
 texture = ExtResource("2_af2e0")
