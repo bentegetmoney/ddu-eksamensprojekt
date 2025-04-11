@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if level < 5 && level > 0:
 		print("scenen skal nu skiftes til den næste scene")
-		var next_level_path = FILE_BEGIN + str(stage) + str(level) + ".tscn"
+		var next_level_path = FILE_BEGIN + str(level) + ".tscn"
 		print(next_level_path)
 		get_tree().change_scene_to_file(next_level_path)
 	else:
