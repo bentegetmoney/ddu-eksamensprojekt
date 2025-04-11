@@ -6,7 +6,6 @@ extends CharacterBody2D
 @onready var charge_1: ProgressBar = $Charge1
 
 var player_id = 1
-
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
 
@@ -61,4 +60,8 @@ func take_damage(amount: int):
 	print("Player 1 blev ramt! Hits: " + str(global.hit1))
 	if global.hit1 >= 3:
 		print("spiller " , player_id , " er død")
-		#die() der skal laves en funktion som dræber dem
+		#die() der skal laves en funktion som dræber dem. hmm nej det er vel bare inde i nextlvl
+
+func take_slow(amount: int):
+	speed+=amount
+	print("player er slowed")

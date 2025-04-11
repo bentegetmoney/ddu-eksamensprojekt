@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsir5sqo0ndbi"
-path="res://.godot/imported/tomat.png-9c8dbbe5333e20bcd960f59f42390eb1.ctex"
+uid="uid://cy5cq07k2k40o"
+path="res://.godot/imported/tomat.jpg-48a6aaf7a9306a468a5e4d4bfc838d8f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/våben/tomat.png"
-dest_files=["res://.godot/imported/tomat.png-9c8dbbe5333e20bcd960f59f42390eb1.ctex"]
+source_file="res://assets/map objects/tomat.jpg"
+dest_files=["res://.godot/imported/tomat.jpg-48a6aaf7a9306a468a5e4d4bfc838d8f.ctex"]
 
 [params]
 

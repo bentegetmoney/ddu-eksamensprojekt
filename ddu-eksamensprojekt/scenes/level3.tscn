@@ -1,13 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvdx53lw6x0io"]
+[gd_scene load_steps=5 format=3 uid="uid://bvdx53lw6x0io"]
 
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_ovqfe"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_f0c1b"]
 [ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="3_xvoio"]
+[ext_resource type="PackedScene" uid="uid://bvl2nry5qo31c" path="res://scenes/map_objects/sauce.tscn" id="4_r06kh"]
 
 [node name="level 3" type="Node2D"]
 
 [node name="player1" parent="." instance=ExtResource("1_ovqfe")]
+position = Vector2(326, 284)
 
 [node name="player2" parent="." instance=ExtResource("2_f0c1b")]
+position = Vector2(710, 278)
 
 [node name="nextLvl" parent="." instance=ExtResource("3_xvoio")]
+
+[node name="sauce" parent="." instance=ExtResource("4_r06kh")]
+position = Vector2(323, 508)
+script = null

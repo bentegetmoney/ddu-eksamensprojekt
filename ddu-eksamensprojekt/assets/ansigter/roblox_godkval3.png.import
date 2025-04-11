@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsh10f3v8e1mo"
-path="res://.godot/imported/roblox_godkval3.png-96493183b74666b28f7d2e53101214d4.ctex"
+path="res://.godot/imported/roblox_godkval3.png-89096e0a7dc871e367819ecb40ad3be9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ansigter/roblox_godkval3.png"
-dest_files=["res://.godot/imported/roblox_godkval3.png-96493183b74666b28f7d2e53101214d4.ctex"]
+source_file="res://assets/ansigter/roblox_godkval3.png"
+dest_files=["res://.godot/imported/roblox_godkval3.png-89096e0a7dc871e367819ecb40ad3be9.ctex"]
 
 [params]
 
