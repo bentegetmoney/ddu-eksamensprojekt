@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dsir5sqo0ndbi"
-path="res://.godot/imported/tomat.png-b6949eaf180028e0e961add331c1fd98.ctex"
+path="res://.godot/imported/tomat.png-9c8dbbe5333e20bcd960f59f42390eb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/våben/tomat.png"
-dest_files=["res://.godot/imported/tomat.png-b6949eaf180028e0e961add331c1fd98.ctex"]
+source_file="res://assets/våben/tomat.png"
+dest_files=["res://.godot/imported/tomat.png-9c8dbbe5333e20bcd960f59f42390eb1.ctex"]
 
 [params]
 
