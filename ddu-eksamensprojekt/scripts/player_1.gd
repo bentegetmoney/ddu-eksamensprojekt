@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var global = get_node("/root/Global")
 @onready var charge_1: ProgressBar = $Charge1
 @onready var ben: AnimatedSprite2D = $ben
- 
+
 var player_id = 1
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO

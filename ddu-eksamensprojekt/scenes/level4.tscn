@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://cvfuq5rh4fask"]
+[gd_scene load_steps=5 format=3 uid="uid://cvfuq5rh4fask"]
+
+[ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="1_iv0yu"]
+[ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="2_0rdaj"]
+[ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="3_bixqg"]
+[ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="4_gauhu"]
 
 [node name="level 3" type="Node2D"]
+
+[node name="interface" parent="." instance=ExtResource("1_iv0yu")]
+
+[node name="player1" parent="." instance=ExtResource("2_0rdaj")]
+speed = 150.0
+
+[node name="player2" parent="." instance=ExtResource("3_bixqg")]
+
+[node name="nextLvl" parent="." instance=ExtResource("4_gauhu")]
