@@ -16,7 +16,7 @@ position = Vector2(710, 278)
 
 [node name="nextLvl" parent="." instance=ExtResource("3_xvoio")]
 
-[node name="Area2D" parent="." instance=ExtResource("4_yah7d")]
+[node name="Ketchup" parent="." instance=ExtResource("4_yah7d")]
 position = Vector2(472, 463)
 
 [node name="interface" parent="." instance=ExtResource("5_xfq7m")]
