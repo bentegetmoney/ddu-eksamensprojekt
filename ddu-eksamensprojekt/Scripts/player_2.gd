@@ -62,3 +62,6 @@ func take_damage(amount: int):
 	if global.hit2 >= 3:
 		print("spiller " , player_id , " er død")
 		#die() der skal laves en funktion der dræber spilleren
+func take_slow(amount: int):
+	speed=amount
+	print("player er slowed")

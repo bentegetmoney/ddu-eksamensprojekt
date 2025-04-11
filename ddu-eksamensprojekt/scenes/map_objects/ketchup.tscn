@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://8f2qkragy2xk"]
+
+[ext_resource type="Script" path="res://scripts/map_objects/ketchup.gd" id="1_i6mb1"]
+[ext_resource type="Texture2D" uid="uid://d3yma1xbea7et" path="res://assets/map objects/ketchup.png" id="2_ukr1e"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yhx3d"]
+radius = 47.0851
+height = 226.52
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_i6mb1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ukr1e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+rotation = 1.60396
+shape = SubResource("CapsuleShape2D_yhx3d")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
