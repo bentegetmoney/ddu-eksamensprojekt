@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://fn8qo8ckvfko"]
+
+[ext_resource type="Script" path="res://scripts/map_objects/icecream.gd" id="1_1c1i0"]
+[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_blt3h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqjuv"]
+size = Vector2(122, 123)
+
+[node name="icecream" type="Area2D"]
+script = ExtResource("1_1c1i0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_blt3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, -1.5)
+shape = SubResource("RectangleShape2D_aqjuv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
