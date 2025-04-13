@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var timer: Timer = $Timer
-@export var speed: float = 150
+@export var speed: float = 200
 @onready var global = get_node("/root/Global")
 @onready var charge_2: ProgressBar = $charge2
 @onready var ben: AnimatedSprite2D = $ben

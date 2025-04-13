@@ -7,5 +7,5 @@ func _on_body_entered(body):
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("player"):
-		body.take_slow(150) #tilbage til den normale
+		body.take_slow(200) #tilbage til den normale
 		print("player unslowed")
