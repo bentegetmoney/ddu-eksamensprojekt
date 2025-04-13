@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d8eogw5g068q"]
 
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
-[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://Assets/font/Burgery.ttf" id="2_2qoeb"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="2_2qoeb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngr55"]
 bg_color = Color(0.988235, 0.960784, 0.780392, 1)
@@ -9,7 +9,7 @@ border_width_left = 15
 border_width_top = 15
 border_width_right = 15
 border_width_bottom = 15
-border_color = Color(0.627451, 0.807843, 0.85098, 1)
+border_color = Color(0.898039, 0.34902, 0.203922, 1)
 border_blend = true
 corner_radius_top_left = 10
 corner_radius_top_right = 10
@@ -19,7 +19,7 @@ expand_margin_left = 3.0
 expand_margin_top = 3.0
 expand_margin_right = 3.0
 expand_margin_bottom = 3.0
-shadow_color = Color(1, 0.752941, 0.623529, 1)
+shadow_color = Color(0.607843, 0.772549, 0.239216, 1)
 shadow_size = 13
 
 [sub_resource type="Theme" id="Theme_exre7"]
@@ -34,6 +34,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5objy")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(50.5565, 33.8116)
+color = Color(0.356863, 0.752941, 0.921569, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -58,7 +65,7 @@ alignment = 1
 [node name="start" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
-theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
 theme_override_fonts/font = ExtResource("2_2qoeb")
 theme_override_font_sizes/font_size = 70
 action_mode = 0
@@ -68,7 +75,7 @@ autowrap_mode = 3
 [node name="tutorial" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
-theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
 theme_override_fonts/font = ExtResource("2_2qoeb")
 theme_override_font_sizes/font_size = 70
 action_mode = 0
@@ -78,7 +85,7 @@ autowrap_mode = 3
 [node name="slut" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = SubResource("Theme_exre7")
-theme_override_colors/font_color = Color(1, 0.752941, 0.623529, 1)
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
 theme_override_fonts/font = ExtResource("2_2qoeb")
 theme_override_font_sizes/font_size = 70
 action_mode = 0
