@@ -1,10 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6hqxksht1pvr"]
+[gd_scene load_steps=6 format=3 uid="uid://c6hqxksht1pvr"]
 
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_5fc3c"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_cwqnk"]
+[ext_resource type="PackedScene" uid="uid://8f2qkragy2xk" path="res://scenes/map_objects/ketchup.tscn" id="3_xce7v"]
+[ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="4_p26mf"]
+[ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="5_lw2k1"]
 
 [node name="level 2" type="Node2D"]
 
 [node name="player1" parent="." instance=ExtResource("1_5fc3c")]
+position = Vector2(133, 282)
 
 [node name="player2" parent="." instance=ExtResource("2_cwqnk")]
+
+[node name="ketchup1" parent="." instance=ExtResource("3_xce7v")]
+position = Vector2(436, 433)
+scale = Vector2(0.459714, 0.949008)
+
+[node name="ketchup2" parent="." instance=ExtResource("3_xce7v")]
+position = Vector2(844, 160)
+rotation = -0.523598
+
+[node name="nextLvl" parent="." instance=ExtResource("4_p26mf")]
+
+[node name="interface" parent="." instance=ExtResource("5_lw2k1")]

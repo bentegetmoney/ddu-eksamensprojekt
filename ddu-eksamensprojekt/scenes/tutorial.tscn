@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://e3x5darghyhn"]
+[gd_scene load_steps=7 format=3 uid="uid://e3x5darghyhn"]
 
 [ext_resource type="Script" path="res://scripts/tutorial.gd" id="1_31g7q"]
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_mkfnu"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_cejuj"]
-[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/burgery/Burgery.ttf" id="3_mnpf4"]
+[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="3_mnpf4"]
+[ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="5_f8vii"]
+[ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="6_bkygy"]
 
 [node name="tutorial" type="Node2D"]
 script = ExtResource("1_31g7q")
@@ -22,8 +24,10 @@ offset_bottom = 40.0
 
 [node name="movement" type="Label" parent="instructions"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 228.0
+offset_top = 40.0
+offset_right = 702.0
+offset_bottom = 107.0
 theme_override_fonts/font = ExtResource("3_mnpf4")
 theme_override_font_sizes/font_size = 50
 text = "Bevæg dig med WASD- og piltasterne"
@@ -46,7 +50,7 @@ offset_right = 952.0
 offset_bottom = 207.0
 text = "Du har 3 liv. Vind over din modstander"
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="background" type="ColorRect" parent="."]
 show_behind_parent = true
 anchors_preset = 8
 anchor_left = 0.5
@@ -63,5 +67,9 @@ scale = Vector2(88.7454, 3562.35)
 color = Color(0.296228, 0.141583, 0.417044, 1)
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="nextLvl" parent="." instance=ExtResource("5_f8vii")]
+
+[node name="interface" parent="." instance=ExtResource("6_bkygy")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

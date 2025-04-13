@@ -7,7 +7,7 @@
 radius = 47.0851
 height = 226.52
 
-[node name="Area2D" type="Area2D"]
+[node name="ketchup" type="Area2D"]
 script = ExtResource("1_i6mb1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 			Global.hit2 = 0
 			started = true
 			vinder.text = "player 2 har vundet"
-			animation.play("ani") #i parenteset hedder den Animation (når man trykker på animationen og kigger ende på navnet!
+			animation.play("ani") #i parenteset hedder den ani (når man trykker på animationen og kigger på navnet!
 		elif Global.hit2>=3:
 			#her vinder player 1
 			level -=1
@@ -30,10 +30,13 @@ func _process(delta: float) -> void:
 
 #bane skifter
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
-	if level < 5 && level > 0:
-		print("scenen skal nu skiftes til den næste scene")
-		var next_level_path = FILE_BEGIN + str(level) + ".tscn"
-		print(next_level_path)
-		get_tree().change_scene_to_file(next_level_path)
-	else:
+	if get_tree().current_scene.scene_file_path == "res://scenes/tutorial.tscn":
 		get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
+	else:
+		if level < 5 && level > 0:
+			print("scenen skal nu skiftes til den næste scene")
+			var next_level_path = FILE_BEGIN + str(level) + ".tscn"
+			print(next_level_path)
+			get_tree().change_scene_to_file(next_level_path)
+		else:
+			get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
