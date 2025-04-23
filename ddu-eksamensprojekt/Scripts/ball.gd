@@ -13,4 +13,4 @@ func _on_body_entered(body) -> void:
 		queue_free()#fjerner bolden
 
 func _on_screen_exited() -> void:
-	queue_free() # Replace with function body.
+	queue_free()

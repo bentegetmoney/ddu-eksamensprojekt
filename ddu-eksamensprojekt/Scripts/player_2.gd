@@ -34,8 +34,6 @@ func _process(delta):
 		
 		if !ben.is_playing() or ben.animation != "ben":
 			ben.play("ben")
-			
-			
 	
 	else:
 		velocity = Vector2.ZERO
@@ -63,6 +61,8 @@ func shoot():
 	timer.start()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
+	bullet.get_node("AnimatedSprite2D").play("krymmel")
+
 	bullet.position = position
 	bullet.owner_id = 2
 	bullet.direction = ballDirection.normalized() * charge_2.value #retningen kuglen skal flyve i
