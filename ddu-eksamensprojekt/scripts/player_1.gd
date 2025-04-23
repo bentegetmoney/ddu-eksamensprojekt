@@ -61,6 +61,8 @@ func shoot():
 	timer.start()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
+	bullet.get_node("AnimatedSprite2D").play("tomat")
+
 	bullet.position = position
 	bullet.owner_id = 1
 	bullet.direction = ballDirection.normalized() * charge_1.value #retningen kuglen skal flyve i

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7tef2g8tfylb"
-path="res://.godot/imported/iskugle.png-9d89b786e8b37358f11a9b121725b57f.ctex"
+path="res://.godot/imported/iskugle.png-39e90f4d310189d6665368b8a33d7eef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/våben/iskugle.png"
-dest_files=["res://.godot/imported/iskugle.png-9d89b786e8b37358f11a9b121725b57f.ctex"]
+source_file="res://assets/map objects/iskugle.png"
+dest_files=["res://.godot/imported/iskugle.png-39e90f4d310189d6665368b8a33d7eef.ctex"]
 
 [params]
 

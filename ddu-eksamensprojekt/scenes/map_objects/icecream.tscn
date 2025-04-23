@@ -1,20 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://fn8qo8ckvfko"]
 
 [ext_resource type="Script" path="res://scripts/map_objects/icecream.gd" id="1_1c1i0"]
-[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="2_blt3h"]
+[ext_resource type="Texture2D" uid="uid://c7tef2g8tfylb" path="res://assets/map objects/iskugle.png" id="2_3bw0l"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqjuv"]
-size = Vector2(122, 123)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6wto6"]
+radius = 42.0
+height = 106.0
 
 [node name="icecream" type="Area2D"]
 script = ExtResource("1_1c1i0")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_blt3h")
+texture = ExtResource("2_3bw0l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, -1.5)
-shape = SubResource("RectangleShape2D_aqjuv")
+position = Vector2(0, -3)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_6wto6")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
