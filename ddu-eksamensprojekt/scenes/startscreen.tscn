@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
 [ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="2_2qoeb"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngr55"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ni4uk"]
 bg_color = Color(0.988235, 0.960784, 0.780392, 1)
 border_width_left = 15
 border_width_top = 15
@@ -24,7 +24,7 @@ shadow_size = 13
 
 [sub_resource type="Theme" id="Theme_exre7"]
 default_font = ExtResource("2_2qoeb")
-Button/styles/normal = SubResource("StyleBoxFlat_ngr55")
+Button/styles/normal = SubResource("StyleBoxFlat_ni4uk")
 
 [node name="startscreen" type="Control"]
 layout_mode = 3

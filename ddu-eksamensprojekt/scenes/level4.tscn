@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cvfuq5rh4fask"]
+[gd_scene load_steps=7 format=3 uid="uid://cvfuq5rh4fask"]
 
+[ext_resource type="Texture2D" uid="uid://c5y348adk4lrn" path="res://assets/baggrunde/vaffel_baggrund.png" id="1_go5qk"]
 [ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="1_iv0yu"]
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="2_0rdaj"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="3_bixqg"]
@@ -7,6 +8,21 @@
 [ext_resource type="PackedScene" uid="uid://cipt83owbstl2" path="res://scenes/map_objects/portal.tscn" id="5_76h7e"]
 
 [node name="level 4" type="Node2D"]
+
+[node name="backgr" type="Sprite2D" parent="."]
+scale = Vector2(1.58, 1.58)
+texture = ExtResource("1_go5qk")
+centered = false
+
+[node name="background" type="ColorRect" parent="."]
+show_behind_parent = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 2000.0
+offset_bottom = 1000.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="interface" parent="." instance=ExtResource("1_iv0yu")]
 
