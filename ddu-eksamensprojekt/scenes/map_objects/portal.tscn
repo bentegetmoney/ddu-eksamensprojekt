@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cipt83owbstl2"]
+
+[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="1_fgoag"]
+[ext_resource type="Script" path="res://scripts/map_objects/portal.gd" id="1_nm4g6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0u4"]
+size = Vector2(120, 124.5)
+
+[node name="portal" type="Area2D" groups=["portal", "portals"]]
+script = ExtResource("1_nm4g6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 3.14159
+texture = ExtResource("1_fgoag")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -2.25)
+shape = SubResource("RectangleShape2D_0u0u4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -6,8 +6,8 @@ extends CharacterBody2D
 @onready var charge_2: ProgressBar = $charge2
 @onready var ben: AnimatedSprite2D = $ben
 
+var just_teleported = false
 var player_id = 2
-
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
 

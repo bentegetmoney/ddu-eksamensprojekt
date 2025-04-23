@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var charge_1: ProgressBar = $Charge1
 @onready var ben: AnimatedSprite2D = $ben
 
+var just_teleported = false
 var player_id = 1
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
@@ -33,8 +34,6 @@ func _process(delta):
 		
 		if !ben.is_playing() or ben.animation != "ben":
 			ben.play("ben")
-			
-			
 	
 	else:
 		velocity = Vector2.ZERO

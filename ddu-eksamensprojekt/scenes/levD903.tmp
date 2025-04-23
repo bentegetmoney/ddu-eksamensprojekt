@@ -21,8 +21,10 @@ position = Vector2(322, 285)
 position = Vector2(231, 536)
 portal_id = "A"
 target_portal_id = "B"
+entered = null
 
 [node name="portalB" parent="." instance=ExtResource("5_76h7e")]
 position = Vector2(827, 398)
 portal_id = "B"
 target_portal_id = "A"
+entered = null
