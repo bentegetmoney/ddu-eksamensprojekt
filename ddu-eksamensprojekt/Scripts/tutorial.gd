@@ -26,7 +26,3 @@ func _process(delta):
 			taken_health = true
 			health.visible = true
 			timer.start(5)
-
-func _on_timer_timeout() -> void:
-	#spil winning screen. når den er spillet skal skærmen tilbage til menu :)
-	print("nu skal der skiftes scene til vinderskærm")
