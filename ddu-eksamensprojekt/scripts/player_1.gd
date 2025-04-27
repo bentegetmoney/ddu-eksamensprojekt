@@ -1,4 +1,14 @@
 extends CharacterBody2D
+var blå_shader = preload("res://Assets/shaders/blå.gdshader")
+var grøn_shader = preload("res://Assets/shaders/grøn.gdshader")
+var gul_shader = preload("res://Assets/shaders/gul.gdshader")
+var lilla_shader = preload("res://Assets/shaders/lilla.gdshader")
+var orange_shader = preload("res://Assets/shaders/orange.gdshader")
+var pink_shader = preload("res://Assets/shaders/pink.gdshader")
+var rød_shader = preload("res://Assets/shaders/rød.gdshader")
+var hvid_shader = preload("res://Assets/shaders/hvid.gdshader")
+
+var database : SQLite
 
 @onready var timer: Timer = $Timer
 @export var speed: float = 200
@@ -10,6 +20,36 @@ var just_teleported = false
 var player_id = 1
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
+
+func apply_shader_from_database():
+	var result = database.select_rows("playerColor", "color", ["id = 1"])
+	
+	if result.size() > 0:
+		var color_name = result[0]["color"].to_lower()
+		
+		match color_name:
+			"blå":
+				ben.material = blå_shader
+			"rød":
+				ben.material = rød_shader
+			"orange":
+				ben.material = orange_shader
+			"gul":
+				ben.material = gul_shader
+			"grøn":
+				ben.material = grøn_shader
+			"lilla":
+				ben.material = lilla_shader
+			"pink":
+				ben.material = pink_shader
+			"lyserød":
+				ben.material = pink_shader
+			"hvid":
+				ben.material = hvid_shader
+			_:
+				print("No matching shader found for color:", color_name)
+
+
 
 func _process(delta):
 	charge_1.value += delta
