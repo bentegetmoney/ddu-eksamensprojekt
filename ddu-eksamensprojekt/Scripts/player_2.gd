@@ -1,5 +1,16 @@
 extends CharacterBody2D
 
+var blå_shader := ShaderMaterial.new()
+var grøn_shader := ShaderMaterial.new()
+var gul_shader := ShaderMaterial.new()
+var lilla_shader := ShaderMaterial.new()
+var orange_shader := ShaderMaterial.new()
+var pink_shader := ShaderMaterial.new()
+var rød_shader := ShaderMaterial.new()
+var hvid_shader := ShaderMaterial.new()
+
+var database : SQLite
+
 @onready var timer: Timer = $Timer
 @export var speed: float = 200
 @onready var global = get_node("/root/Global")
@@ -10,6 +21,53 @@ var just_teleported = false
 var player_id = 2
 var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
+
+func _ready() -> void:
+	blå_shader.shader = preload("res://Assets/shaders/blå.gdshader")
+	grøn_shader.shader = preload("res://Assets/shaders/grøn.gdshader")
+	gul_shader.shader = preload("res://Assets/shaders/gul.gdshader")
+	lilla_shader.shader = preload("res://Assets/shaders/lilla.gdshader")
+	orange_shader.shader = preload("res://Assets/shaders/orange.gdshader")
+	pink_shader.shader = preload("res://Assets/shaders/pink.gdshader")
+	rød_shader.shader = preload("res://Assets/shaders/rød.gdshader")
+	hvid_shader.shader = preload("res://Assets/shaders/hvid.gdshader")
+	
+	database = SQLite.new()
+	database.path = "res://data.db"
+	database.open_db()
+	
+	apply_shader_from_database()
+
+func apply_shader_from_database():
+	var result = database.select_rows("playerColor", "id = 2", ["color"])
+	
+	if result.size() > 0:
+		var color_name = result[0]["color"].to_lower()
+		print("Fetched color from database:", color_name)
+		
+		match color_name:
+			"blå":
+				ben.material = blå_shader
+			"rød":
+				ben.material = rød_shader
+			"orange":
+				ben.material = orange_shader
+			"gul":
+				ben.material = gul_shader
+			"grøn":
+				ben.material = grøn_shader
+			"lilla":
+				ben.material = lilla_shader
+			"pink":
+				ben.material = pink_shader
+			"lyserød":
+				ben.material = pink_shader
+			"hvid":
+				ben.material = hvid_shader
+			_:
+				print("No matching shader found for color:", color_name)
+	else:
+		print("No result found in the database!")
 
 func _process(delta):
 	charge_2.value += delta

@@ -19,3 +19,4 @@ func _on_start_spil_button_down() -> void:
 	var color2 = $Color2.text
 	database.update_rows("playerColor", "id = 1", {"color": color1})
 	database.update_rows("playerColor", "id = 2", {"color": color2})
+	get_tree().change_scene_to_file("res://scenes/level3.tscn")
