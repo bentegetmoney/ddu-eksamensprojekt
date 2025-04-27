@@ -1,11 +1,14 @@
-[gd_scene load_steps=21 format=3 uid="uid://8cvn1kjkpbra"]
+[gd_scene load_steps=22 format=3 uid="uid://8cvn1kjkpbra"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
 [ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://Assets/karakterer/burger.png" id="2_3gxhg"]
+[ext_resource type="Shader" path="res://Assets/shaders/grøn.gdshader" id="2_rmkxr"]
 [ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://Assets/arme og ben/ben2.png" id="2_vln7u"]
 [ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://Assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1461t"]
+shader = ExtResource("2_rmkxr")
+shader_parameter/tolerance = 1.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fcinx"]
 atlas = ExtResource("2_vln7u")

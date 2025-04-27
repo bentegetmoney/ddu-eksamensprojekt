@@ -1,13 +1,13 @@
 extends CharacterBody2D
 
-var blå_shader := ShaderMaterial.new()
-var grøn_shader := ShaderMaterial.new()
-var gul_shader := ShaderMaterial.new()
-var lilla_shader := ShaderMaterial.new()
-var orange_shader := ShaderMaterial.new()
-var pink_shader := ShaderMaterial.new()
-var rød_shader := ShaderMaterial.new()
-var hvid_shader := ShaderMaterial.new()
+var blå_shader = preload("res://Assets/shaders/blå.gdshader")
+var grøn_shader = preload("res://Assets/shaders/grøn.gdshader")
+var gul_shader = preload("res://Assets/shaders/gul.gdshader")
+var lilla_shader = preload("res://Assets/shaders/lilla.gdshader")
+var orange_shader = preload("res://Assets/shaders/orange.gdshader")
+var pink_shader = preload("res://Assets/shaders/pink.gdshader")
+var rød_shader = preload("res://Assets/shaders/rød.gdshader")
+var hvid_shader = preload("res://Assets/shaders/hvid.gdshader")
 
 var database : SQLite
 
@@ -23,15 +23,6 @@ var canShoot: bool = true
 var ballDirection: Vector2 = Vector2.ZERO
 
 func _ready() -> void:
-	blå_shader.shader = preload("res://Assets/shaders/blå.gdshader")
-	grøn_shader.shader = preload("res://Assets/shaders/grøn.gdshader")
-	gul_shader.shader = preload("res://Assets/shaders/gul.gdshader")
-	lilla_shader.shader = preload("res://Assets/shaders/lilla.gdshader")
-	orange_shader.shader = preload("res://Assets/shaders/orange.gdshader")
-	pink_shader.shader = preload("res://Assets/shaders/pink.gdshader")
-	rød_shader.shader = preload("res://Assets/shaders/rød.gdshader")
-	hvid_shader.shader = preload("res://Assets/shaders/hvid.gdshader")
-	
 	database = SQLite.new()
 	database.path = "res://data.db"
 	database.open_db()
