@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://ddul8vx7ew6wp"]
 
 [ext_resource type="Script" path="res://scripts/next_lvl.gd" id="1_h3cdb"]
-[ext_resource type="Texture2D" uid="uid://dnxua5dj8h3dy" path="res://assets/Rd_Win.png" id="3_hj4j3"]
-[ext_resource type="Texture2D" uid="uid://c8qk34lvputyx" path="res://assets/Bla_Win.png" id="4_ugc01"]
+[ext_resource type="Texture2D" uid="uid://dnxua5dj8h3dy" path="res://Assets/Rd_Win.png" id="3_hj4j3"]
+[ext_resource type="Texture2D" uid="uid://c8qk34lvputyx" path="res://Assets/Bla_Win.png" id="4_ugc01"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gtx2v"]
 animations = [{
