@@ -38,23 +38,23 @@ func apply_shader_from_database():
 		
 		match color_name:
 			"blå":
-				ben.material = blå_shader
+				ben.material.shader = blå_shader
 			"rød":
-				ben.material = rød_shader
+				ben.material.shader = rød_shader
 			"orange":
-				ben.material = orange_shader
+				ben.material.shader = orange_shader
 			"gul":
-				ben.material = gul_shader
+				ben.material.shader = gul_shader
 			"grøn":
-				ben.material = grøn_shader
+				ben.material.shader = grøn_shader
 			"lilla":
-				ben.material = lilla_shader
+				ben.material.shader = lilla_shader
 			"pink":
-				ben.material = pink_shader
+				ben.material.shader = pink_shader
 			"lyserød":
-				ben.material = pink_shader
+				ben.material.shader = pink_shader
 			"hvid":
-				ben.material = hvid_shader
+				ben.material.shader = hvid_shader
 			_:
 				print("No matching shader found for color:", color_name)
 	else:

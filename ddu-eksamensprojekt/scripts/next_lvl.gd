@@ -31,7 +31,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 	if get_tree().current_scene.scene_file_path == "res://scenes/tutorial.tscn":
 		get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
 	else:
-		if level < 5 && level > 0:
+		if level < 6 && level > 0:
 			print("scenen skal nu skiftes til den næste scene")
 			var next_level_path = FILE_BEGIN + str(level) + ".tscn"
 			print(next_level_path)
