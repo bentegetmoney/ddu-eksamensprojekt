@@ -1,29 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://d8eogw5g068q"]
 
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="2_y8so7"]
 [ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="3_8xpi0"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ni4uk"]
-bg_color = Color(0.988235, 0.960784, 0.780392, 1)
-border_width_left = 15
-border_width_top = 15
-border_width_right = 15
-border_width_bottom = 15
-border_color = Color(0.898039, 0.34902, 0.203922, 1)
-border_blend = true
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-expand_margin_left = 3.0
-expand_margin_top = 3.0
-expand_margin_right = 3.0
-expand_margin_bottom = 3.0
-shadow_color = Color(0.607843, 0.772549, 0.239216, 1)
-shadow_size = 13
-
 [sub_resource type="Theme" id="Theme_exre7"]
-Button/styles/normal = SubResource("StyleBoxFlat_ni4uk")
+Button/styles/normal = ExtResource("2_y8so7")
 
 [node name="startscreen" type="Control"]
 layout_mode = 3

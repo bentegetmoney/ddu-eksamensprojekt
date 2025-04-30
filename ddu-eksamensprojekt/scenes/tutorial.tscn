@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://e3x5darghyhn"]
+[gd_scene load_steps=6 format=3 uid="uid://e3x5darghyhn"]
 
 [ext_resource type="Script" path="res://scripts/tutorial.gd" id="1_31g7q"]
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="1_mkfnu"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="2_cejuj"]
-[ext_resource type="FontFile" uid="uid://y7kkyve0lbfw" path="res://assets/font/Burgery.ttf" id="3_mnpf4"]
 [ext_resource type="PackedScene" uid="uid://ddul8vx7ew6wp" path="res://scenes/next_lvl.tscn" id="5_f8vii"]
 [ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="6_bkygy"]
 
@@ -28,7 +27,6 @@ offset_left = 228.0
 offset_top = 40.0
 offset_right = 702.0
 offset_bottom = 107.0
-theme_override_fonts/font = ExtResource("3_mnpf4")
 theme_override_font_sizes/font_size = 50
 text = "Bevæg dig med WASD- og piltasterne"
 

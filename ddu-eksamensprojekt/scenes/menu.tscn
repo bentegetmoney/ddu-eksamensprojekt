@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3 uid="uid://dta8sggu153ae"]
+
+[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_j45wb"]
+[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://Assets/Themes/startscreenHover.tres" id="1_ysq58"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="2_0onnu"]
+[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="3_miaou"]
+
+[sub_resource type="Theme" id="Theme_6y3q1"]
+default_font = ExtResource("3_miaou")
+Button/styles/hover = ExtResource("1_ysq58")
+Button/styles/normal = ExtResource("2_0onnu")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_85xox"]
+bg_color = Color(0.988235, 0.960784, 0.780392, 1)
+border_width_left = 15
+border_width_top = 15
+border_width_right = 15
+border_width_bottom = 15
+
+[sub_resource type="Theme" id="Theme_g5k4o"]
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_85xox")
+
+[node name="Menu" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.469618
+anchor_top = 0.966049
+anchor_right = 0.524306
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -8.0
+offset_right = 4.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(0, -50)
+theme = SubResource("Theme_6y3q1")
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
+theme_override_fonts/font = ExtResource("3_miaou")
+theme_override_font_sizes/font_size = 51
+text = "Menu"
+script = ExtResource("1_j45wb")
+metadata/_edit_use_anchors_ = true
+
+[node name="PopupMenu" type="PopupMenu" parent="Button"]
+initial_position = 1
+size = Vector2i(809, 595)
+visible = true
+theme = SubResource("Theme_g5k4o")
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
+theme_override_font_sizes/font_size = 56
+item_count = 4
+item_0/text = "Fortsæt"
+item_1/text = "Instruktioner"
+item_1/id = 1
+item_2/text = "Startskærm"
+item_2/id = 2
+item_3/text = "Luk spillet"
+item_3/id = 3
+
+[node name="PopupPanel" type="PopupPanel" parent="Button"]
+initial_position = 1
+size = Vector2i(214, 100)
+
+[node name="Label" type="Label" parent="Button/PopupPanel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 210.0
+offset_bottom = 96.0
+text = "Instruktioner
+dræb din spiller med lalala"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="id_pressed" from="Button/PopupMenu" to="Button" method="_on_popup_menu_id_pressed"]
