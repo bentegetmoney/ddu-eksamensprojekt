@@ -16,6 +16,18 @@ border_width_left = 15
 border_width_top = 15
 border_width_right = 15
 border_width_bottom = 15
+border_color = Color(0.898039, 0.34902, 0.203922, 1)
+border_blend = true
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(0.607843, 0.772549, 0.239216, 1)
+shadow_size = 15
 
 [sub_resource type="Theme" id="Theme_g5k4o"]
 PopupMenu/styles/panel = SubResource("StyleBoxFlat_85xox")
@@ -43,32 +55,19 @@ script = ExtResource("1_j45wb")
 metadata/_edit_use_anchors_ = true
 
 [node name="PopupMenu" type="PopupMenu" parent="Button"]
+title = "Menu"
 initial_position = 1
-size = Vector2i(809, 595)
-visible = true
+size = Vector2i(274, 198)
+always_on_top = true
 theme = SubResource("Theme_g5k4o")
 theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
 theme_override_font_sizes/font_size = 56
-item_count = 4
+item_count = 3
 item_0/text = "Fortsæt"
-item_1/text = "Instruktioner"
-item_1/id = 1
-item_2/text = "Startskærm"
-item_2/id = 2
-item_3/text = "Luk spillet"
-item_3/id = 3
-
-[node name="PopupPanel" type="PopupPanel" parent="Button"]
-initial_position = 1
-size = Vector2i(214, 100)
-
-[node name="Label" type="Label" parent="Button/PopupPanel"]
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 210.0
-offset_bottom = 96.0
-text = "Instruktioner
-dræb din spiller med lalala"
+item_1/text = "Startskærm"
+item_1/id = 2
+item_2/text = "Luk spillet"
+item_2/id = 3
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="id_pressed" from="Button/PopupMenu" to="Button" method="_on_popup_menu_id_pressed"]

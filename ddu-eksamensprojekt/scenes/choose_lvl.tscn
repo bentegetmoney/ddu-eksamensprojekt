@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://ct0caualvrgit"]
+[gd_scene load_steps=7 format=3 uid="uid://ct0caualvrgit"]
 
 [ext_resource type="Script" path="res://scenes/SQLcontroller.gd" id="1_4jie1"]
+[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://Assets/Themes/startscreenHover.tres" id="2_hcx16"]
 [ext_resource type="Texture2D" uid="uid://c8kprsn0j2rsn" path="res://Assets/UI sprites/farvevalg.png" id="3_jr6xt"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="3_uwx1v"]
 [ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="4_y314y"]
+
+[sub_resource type="Theme" id="Theme_femjh"]
+Button/styles/hover = ExtResource("2_hcx16")
+Button/styles/normal = ExtResource("3_uwx1v")
 
 [node name="chooseLvl" type="Control"]
 layout_mode = 3
@@ -24,12 +30,14 @@ color = Color(0.356863, 0.752941, 0.921569, 1)
 
 [node name="StartSpil" type="Button" parent="."]
 layout_mode = 0
-offset_left = 693.0
-offset_top = 387.0
-offset_right = 1196.0
-offset_bottom = 650.0
+offset_left = 734.0
+offset_top = 399.0
+offset_right = 1164.0
+offset_bottom = 621.0
+theme = SubResource("Theme_femjh")
+theme_override_colors/font_color = Color(0.607843, 0.772549, 0.239216, 1)
 theme_override_fonts/font = ExtResource("4_y314y")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 120
 text = "Start Spil"
 
 [node name="Color1" type="TextEdit" parent="."]
