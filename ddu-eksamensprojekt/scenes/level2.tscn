@@ -9,9 +9,10 @@
 [node name="level 2" type="Node2D"]
 
 [node name="player1" parent="." instance=ExtResource("1_5fc3c")]
-position = Vector2(133, 282)
+position = Vector2(279, 232)
 
 [node name="player2" parent="." instance=ExtResource("2_cwqnk")]
+position = Vector2(570, 248)
 
 [node name="ketchup1" parent="." instance=ExtResource("3_xce7v")]
 position = Vector2(436, 433)

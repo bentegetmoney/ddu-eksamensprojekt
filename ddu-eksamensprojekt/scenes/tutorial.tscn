@@ -37,6 +37,7 @@ offset_left = 282.0
 offset_top = 91.0
 offset_right = 510.0
 offset_bottom = 114.0
+theme_override_font_sizes/font_size = 50
 text = "Skyd på F og mellemrumstast"
 
 [node name="health" type="Label" parent="instructions"]
@@ -46,6 +47,7 @@ offset_left = 655.0
 offset_top = 184.0
 offset_right = 952.0
 offset_bottom = 207.0
+theme_override_font_sizes/font_size = 50
 text = "Du har 3 liv. Vind over din modstander"
 
 [node name="background" type="ColorRect" parent="."]

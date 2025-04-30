@@ -124,9 +124,9 @@ func _on_timer_timeout() -> void:
 	canShoot = true
 
 func take_damage(amount: int):
-	global.hit2 += amount
+	global.hit2 -= amount
 	print("Player 2 blev ramt! Hits: " + str(global.hit2))
-	if global.hit2 >= 3:
+	if global.hit2 <= 0:
 		print("spiller " , player_id , " er død")
 		#die() der skal laves en funktion der dræber spilleren
 func take_slow(amount: int):

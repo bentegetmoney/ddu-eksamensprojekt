@@ -11,18 +11,18 @@ const FILE_BEGIN = "res://scenes/level"
 func _process(delta: float) -> void:
 	#her skiftes banerne og der sker animation.
 	if started == false:
-		if Global.hit1>=3:
+		if Global.hit1<=0:
 			#her vinder player 2
 			level +=1
-			Global.hit1 = 0
-			Global.hit2 = 0
+			Global.hit1 = 3
+			Global.hit2 = 3
 			started = true
 			animation.play("ani") #i parenteset hedder den ani (når man trykker på animationen og kigger på navnet!
-		elif Global.hit2>=3:
+		elif Global.hit2<=0:
 			#her vinder player 1
 			level -=1
-			Global.hit1 = 0
-			Global.hit2 = 0
+			Global.hit1 = 3
+			Global.hit2 = 3
 			started = true
 			animation.play("ani")
 

@@ -69,9 +69,9 @@ theme_override_font_sizes/font_size = 56
 item_count = 3
 item_0/text = "Fortsæt"
 item_1/text = "Startskærm"
-item_1/id = 2
+item_1/id = 1
 item_2/text = "Luk spillet"
-item_2/id = 3
+item_2/id = 2
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
 [connection signal="id_pressed" from="Button/PopupMenu" to="Button" method="_on_popup_menu_id_pressed"]

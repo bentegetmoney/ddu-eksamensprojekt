@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cvfuq5rh4fask"]
 
-[ext_resource type="Texture2D" uid="uid://c5y348adk4lrn" path="res://assets/baggrunde/vaffel_baggrund.png" id="1_go5qk"]
+[ext_resource type="Texture2D" uid="uid://c5y348adk4lrn" path="res://Assets/baggrunde/vaffel_baggrund.png" id="1_go5qk"]
 [ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="1_iv0yu"]
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="2_0rdaj"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="3_bixqg"]
@@ -27,18 +27,19 @@ grow_vertical = 2
 [node name="interface" parent="." instance=ExtResource("1_iv0yu")]
 
 [node name="player1" parent="." instance=ExtResource("2_0rdaj")]
-position = Vector2(322, 285)
+position = Vector2(750, 397)
 
 [node name="player2" parent="." instance=ExtResource("3_bixqg")]
+position = Vector2(980, 366)
 
 [node name="nextLvl" parent="." instance=ExtResource("4_gauhu")]
 
 [node name="portalA" parent="." instance=ExtResource("5_76h7e")]
-position = Vector2(231, 536)
+position = Vector2(879, 692)
 portal_id = "A"
 target_portal_id = "B"
 
 [node name="portalB" parent="." instance=ExtResource("5_76h7e")]
-position = Vector2(827, 398)
+position = Vector2(1183, 406)
 portal_id = "B"
 target_portal_id = "A"

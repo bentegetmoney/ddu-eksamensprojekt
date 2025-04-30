@@ -126,9 +126,9 @@ func _on_timer_timeout() -> void:
 	canShoot = true
 
 func take_damage(amount: int):
-	global.hit1 += amount
+	global.hit1 -= amount
 	print("Player 1 blev ramt! Hits: " + str(global.hit1))
-	if global.hit1 >= 3:
+	if global.hit1 <= 0:
 		print("spiller " , player_id , " er død")
 		#die() der skal laves en funktion som dræber dem. hmm nej det er vel bare inde i nextlvl
 

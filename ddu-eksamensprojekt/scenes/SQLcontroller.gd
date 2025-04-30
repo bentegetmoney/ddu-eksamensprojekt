@@ -7,12 +7,9 @@ func _ready() -> void:
 	database.path = "res://data.db"
 	database.open_db()
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
- 	
-
 
 func _on_start_spil_button_down() -> void:
 	var color1 = $Color1.text
