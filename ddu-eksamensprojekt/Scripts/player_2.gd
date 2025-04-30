@@ -10,6 +10,7 @@ var rød_shader = preload("res://Assets/shaders/rød.gdshader")
 var hvid_shader = preload("res://Assets/shaders/hvid.gdshader")
 
 var database : SQLite
+var is_charging: bool = false
 
 @onready var timer: Timer = $Timer
 @export var speed: float = 200
@@ -61,7 +62,6 @@ func apply_shader_from_database():
 		print("No result found in the database!")
 
 func _process(delta):
-	charge_2.value += delta
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("ui_right"):
 		ben.flip_h = false
@@ -91,12 +91,15 @@ func _process(delta):
 		if !ben.is_playing() or ben.animation != "stationary":
 			ben.play("stationary")
 	
-	#her skyder spilleren
+	# --- Charging logic ---
 	if Input.is_action_just_pressed("Space") and canShoot:
-		print("Charging")
+		is_charging = true
 		charge_2.value = 0
 		charge_2.visible = true
-	if Input.is_action_just_released("Space") and canShoot:
+	elif Input.is_action_pressed("Space") and is_charging:
+		charge_2.value = min(charge_2.value + delta, 1.0)  # Cap charge time (1 second)
+	elif Input.is_action_just_released("Space") and is_charging and canShoot:
+		is_charging = false
 		shoot()
 		charge_2.visible = false
 	
