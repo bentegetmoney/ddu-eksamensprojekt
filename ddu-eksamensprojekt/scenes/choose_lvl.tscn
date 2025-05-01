@@ -54,6 +54,7 @@ offset_left = 1454.0
 offset_top = 753.0
 offset_right = 1752.0
 offset_bottom = 861.0
+theme_override_font_sizes/font_size = 60
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(947, 853)
