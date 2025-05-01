@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2025-04-28T20:17:26.989Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="oy6n16oer1EtnppGhhmz" version="24.4.0" type="device">
+<mxfile host="Electron" modified="2025-04-30T11:14:20.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="LhTX2radnB4CNj0df3S4" version="24.4.0" type="device">
   <diagram name="Side-1" id="sDwwH0XvSyffiM3ZZHnl">
-    <mxGraphModel dx="836" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="794" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,7 +38,7 @@
             <mxPoint x="400.0000000000002" y="340" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" target="YeJALar_M4QnUw0H6pCf-4" edge="1" source="S1AJZzxZbZmASuAkRKrc-1">
+        <mxCell id="YeJALar_M4QnUw0H6pCf-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="S1AJZzxZbZmASuAkRKrc-1" target="YeJALar_M4QnUw0H6pCf-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="970.04" y="100" as="sourcePoint" />
           </mxGeometry>
@@ -49,7 +49,7 @@
         <mxCell id="YeJALar_M4QnUw0H6pCf-13" value="Hvis level 2-4: Sceneskift til&amp;nbsp;&lt;div&gt;næste level&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-11" edge="1" target="YeJALar_M4QnUw0H6pCf-13">
+        <mxCell id="YeJALar_M4QnUw0H6pCf-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-11" target="YeJALar_M4QnUw0H6pCf-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="940" y="210" as="sourcePoint" />
             <mxPoint x="889.9999999999999" y="280" as="targetPoint" />
@@ -134,7 +134,7 @@
         <mxCell id="YeJALar_M4QnUw0H6pCf-34" value="System afventer om spiller kolliderer med modstanders ball" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="510" y="180" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="S1AJZzxZbZmASuAkRKrc-1" value="&amp;nbsp; Spiller kolliderer&amp;nbsp;&lt;div&gt;med modstander&amp;nbsp;&lt;/div&gt;&lt;div&gt;ball&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="S1AJZzxZbZmASuAkRKrc-1" value="&amp;nbsp; Spiller kolliderer&amp;nbsp;&lt;div&gt;med modstander&amp;nbsp;&lt;/div&gt;&lt;div&gt;ball&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="185" width="120" height="60" as="geometry" />
         </mxCell>
       </root>

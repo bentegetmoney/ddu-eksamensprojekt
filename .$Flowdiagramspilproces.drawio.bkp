@@ -1,26 +1,141 @@
-<mxfile host="Electron" modified="2025-04-28T13:19:08.987Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="TU9Dd8db9z77_dK4AoVo" version="24.4.0" type="device">
+<mxfile host="Electron" modified="2025-04-28T20:17:26.989Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="oy6n16oer1EtnppGhhmz" version="24.4.0" type="device">
   <diagram name="Side-1" id="sDwwH0XvSyffiM3ZZHnl">
-    <mxGraphModel dx="662" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="836" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="YeJALar_M4QnUw0H6pCf-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YeJALar_M4QnUw0H6pCf-1" target="YeJALar_M4QnUw0H6pCf-2">
+        <mxCell id="YeJALar_M4QnUw0H6pCf-26" value="W: opad&lt;div&gt;A: venstre&lt;/div&gt;&lt;div&gt;S: nedad&lt;/div&gt;&lt;div&gt;D: højre&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="450" y="430" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-29" value="F: player 1 skyder" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="670" y="420" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YeJALar_M4QnUw0H6pCf-1" target="YeJALar_M4QnUw0H6pCf-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-1" value="start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="100" width="100" height="60" as="geometry" />
+        <mxCell id="YeJALar_M4QnUw0H6pCf-1" value="Spil startet" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="185" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-2" value="System henter spillere frem samt andre assets, som tilsammen udgør level opstarten" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="335" y="220" width="130" height="70" as="geometry" />
+        <mxCell id="YeJALar_M4QnUw0H6pCf-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YeJALar_M4QnUw0H6pCf-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0000000000002" y="280" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-4" value="In/Out spillerbeevægelse" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="230" width="120" height="60" as="geometry" />
+        <mxCell id="YeJALar_M4QnUw0H6pCf-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YeJALar_M4QnUw0H6pCf-2" target="YeJALar_M4QnUw0H6pCf-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-5" value="betingelser" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="400" width="80" height="80" as="geometry" />
+        <mxCell id="YeJALar_M4QnUw0H6pCf-2" value="System henter spillere frem samt andre assets, som tilsammen udgør level opstarten" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="335" y="180" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="YeJALar_M4QnUw0H6pCf-6" value="spiller 1 bevæger sig i retninger baseret på asdw" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="335" y="310" width="120" height="60" as="geometry" />
+        <mxCell id="YeJALar_M4QnUw0H6pCf-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YeJALar_M4QnUw0H6pCf-4" target="YeJALar_M4QnUw0H6pCf-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-4" value="output: spilleres&amp;nbsp;&lt;div&gt;liv vises&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="100" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="YeJALar_M4QnUw0H6pCf-21" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.0000000000002" y="340" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" target="YeJALar_M4QnUw0H6pCf-4" edge="1" source="S1AJZzxZbZmASuAkRKrc-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970.04" y="100" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-11" value="Spiller har mistet 3 liv: vinderanimation og sceneskift" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-13" value="Hvis level 2-4: Sceneskift til&amp;nbsp;&lt;div&gt;næste level&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="550" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-11" edge="1" target="YeJALar_M4QnUw0H6pCf-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="210" as="sourcePoint" />
+            <mxPoint x="889.9999999999999" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="40" />
+              <mxPoint x="680" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-11" target="YeJALar_M4QnUw0H6pCf-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="940" y="210" as="sourcePoint" />
+            <mxPoint x="970" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-19" value="Hvis level 1/5:&lt;div&gt;Sceneskift til startskærm&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="40" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-13" target="YeJALar_M4QnUw0H6pCf-1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="570" as="sourcePoint" />
+            <mxPoint x="280" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="140" />
+              <mxPoint x="250" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-23" value="nej" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-21" target="YeJALar_M4QnUw0H6pCf-28" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="410" />
+              <mxPoint x="490" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-24" value="ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-21" target="YeJALar_M4QnUw0H6pCf-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-21" value="Bliver aswd trykket på" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-22" value="System afventer spiller 1 input fra enten retningsbestemte taster eller skydetast" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="280" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-25" value="System bevæger spiller 1 i bestemt retning&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-31" value="ja" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="YeJALar_M4QnUw0H6pCf-28" target="YeJALar_M4QnUw0H6pCf-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-28" value="Bliver f&amp;nbsp;&lt;div&gt;trykket på&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-30" value="System lader spiller 1 skyde ball i bestemt retning&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=-0.001;exitY=0.603;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-25" target="YeJALar_M4QnUw0H6pCf-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="490" as="sourcePoint" />
+            <mxPoint x="510" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="526" />
+              <mxPoint x="310" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-30" target="YeJALar_M4QnUw0H6pCf-22" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="490" as="sourcePoint" />
+            <mxPoint x="510" y="440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="YeJALar_M4QnUw0H6pCf-34" target="S1AJZzxZbZmASuAkRKrc-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="215" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YeJALar_M4QnUw0H6pCf-34" value="System afventer om spiller kolliderer med modstanders ball" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="180" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="S1AJZzxZbZmASuAkRKrc-1" value="&amp;nbsp; Spiller kolliderer&amp;nbsp;&lt;div&gt;med modstander&amp;nbsp;&lt;/div&gt;&lt;div&gt;ball&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="185" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
