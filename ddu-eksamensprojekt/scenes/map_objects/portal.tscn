@@ -1,22 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://cipt83owbstl2"]
 
-[ext_resource type="Texture2D" uid="uid://b4rq8nal221xd" path="res://icon.svg" id="1_fgoag"]
 [ext_resource type="Script" path="res://scripts/map_objects/portal.gd" id="1_nm4g6"]
+[ext_resource type="Texture2D" uid="uid://bp58juwi750d2" path="res://Assets/map objects/portal.png" id="2_kidhn"]
 [ext_resource type="AudioStream" uid="uid://dfjimv3jagqnf" path="res://Assets/Sound/SoundEffects/portal.mp3" id="3_7xp41"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0u4"]
-size = Vector2(120, 124.5)
+[sub_resource type="CircleShape2D" id="CircleShape2D_y8e6p"]
+radius = 58.1942
 
 [node name="portal" type="Area2D" groups=["portal", "portals"]]
 script = ExtResource("1_nm4g6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 3.14159
-texture = ExtResource("1_fgoag")
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_kidhn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, -2.25)
-shape = SubResource("RectangleShape2D_0u0u4")
+shape = SubResource("CircleShape2D_y8e6p")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_7xp41")
