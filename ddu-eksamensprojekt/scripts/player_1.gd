@@ -61,8 +61,6 @@ func apply_shader_from_database():
 	else:
 		print("No result found in the database!") 
 
-
-
 func _process(delta):
 	var direction = Vector2.ZERO
 	if Input.is_action_pressed("D"):
@@ -110,13 +108,15 @@ func _process(delta):
 		ballDirection = Vector2.RIGHT
 
 func shoot():
+	var sound_shoot = $Sounds/Shoot
 	print("player " , player_id , " skyder")
 	canShoot = false
 	timer.start()
+	sound_shoot.play()
 
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.get_node("AnimatedSprite2D").play("tomat")
-
+	
 	bullet.position = position
 	bullet.owner_id = 1
 	bullet.direction = ballDirection.normalized() * charge_1.value #retningen kuglen skal flyve i
@@ -126,11 +126,12 @@ func _on_timer_timeout() -> void:
 	canShoot = true
 
 func take_damage(amount: int):
+	var sound_ouch = $Sounds/Ouch
 	global.hit1 -= amount
+	sound_ouch.play()
 	print("Player 1 blev ramt! Hits: " + str(global.hit1))
 	if global.hit1 <= 0:
 		print("spiller " , player_id , " er død")
-		#die() der skal laves en funktion som dræber dem. hmm nej det er vel bare inde i nextlvl
 
 func take_slow(amount: int):
 	speed=amount

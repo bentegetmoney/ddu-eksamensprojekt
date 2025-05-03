@@ -1,10 +1,12 @@
-[gd_scene load_steps=22 format=3 uid="uid://8cvn1kjkpbra"]
+[gd_scene load_steps=24 format=3 uid="uid://8cvn1kjkpbra"]
 
 [ext_resource type="Script" path="res://scripts/player_1.gd" id="1_16ylk"]
 [ext_resource type="Texture2D" uid="uid://bcx7x6kt41diq" path="res://Assets/karakterer/burger.png" id="2_3gxhg"]
 [ext_resource type="Shader" path="res://Assets/shaders/lilla.gdshader" id="2_g3iet"]
 [ext_resource type="Texture2D" uid="uid://bbsoskl20jrbo" path="res://Assets/arme og ben/ben2.png" id="2_vln7u"]
 [ext_resource type="Texture2D" uid="uid://dsh10f3v8e1mo" path="res://Assets/ansigter/roblox_godkval3.png" id="3_61wyc"]
+[ext_resource type="AudioStream" uid="uid://b4mfs3m557v6r" path="res://Assets/Sound/SoundEffects/randomizerouch.tres" id="6_058gc"]
+[ext_resource type="AudioStream" uid="uid://bgxffsoaqajdi" path="res://Assets/Sound/SoundEffects/randomizershoot.tres" id="7_3l6qk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1461t"]
 shader = ExtResource("2_g3iet")
@@ -155,5 +157,13 @@ offset_right = 43.0
 offset_bottom = -56.75
 max_value = 1.0
 show_percentage = false
+
+[node name="Sounds" type="Node" parent="."]
+
+[node name="Ouch" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("6_058gc")
+
+[node name="Shoot" type="AudioStreamPlayer" parent="Sounds"]
+stream = ExtResource("7_3l6qk")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

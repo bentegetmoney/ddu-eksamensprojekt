@@ -108,10 +108,12 @@ func _process(delta):
 		ballDirection = Vector2.RIGHT
 
 func shoot():
+	var sound_shoot = $Sounds/Shoot
 	print("player " , player_id , " skyder")
 	canShoot = false
 	timer.start()
-
+	sound_shoot.play()
+	
 	var bullet = preload("res://scenes/ball.tscn").instantiate()
 	bullet.get_node("AnimatedSprite2D").play("krymmel")
 
@@ -124,7 +126,9 @@ func _on_timer_timeout() -> void:
 	canShoot = true
 
 func take_damage(amount: int):
-	global.hit2 -= amount
+	var sound_ouch = $Sounds/Ouch
+	global.hit2 - amount
+	sound_ouch.play()
 	print("Player 2 blev ramt! Hits: " + str(global.hit2))
 	if global.hit2 <= 0:
 		print("spiller " , player_id , " er død")

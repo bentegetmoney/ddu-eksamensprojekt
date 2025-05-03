@@ -11,6 +11,7 @@ func _on_body_entered(body):
 			if portal.portal_id == target_portal_id:
 				body.just_teleported = true
 				body.global_position = portal.global_position
+				$AudioStreamPlayer.play()
 				break
 
 func _on_body_exited(body: Node2D) -> void:
