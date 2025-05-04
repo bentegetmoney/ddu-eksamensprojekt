@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://isdv4xg5cjr6"]
 
 [ext_resource type="Script" path="res://scripts/interface.gd" id="1_7yavy"]
-[ext_resource type="Texture2D" uid="uid://o1lpti5orywd" path="res://Assets/Skilte/red.png" id="1_dfq3e"]
-[ext_resource type="Texture2D" uid="uid://my4vmauuoh3m" path="res://Assets/Skilte/blue.png" id="2_4v0aj"]
-[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="3_lm1x5"]
+[ext_resource type="Texture2D" uid="uid://o1lpti5orywd" path="res://assets/Skilte/red.png" id="1_dfq3e"]
+[ext_resource type="Texture2D" uid="uid://my4vmauuoh3m" path="res://assets/Skilte/blue.png" id="2_4v0aj"]
+[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://assets/Fonts/Milk Shake.otf" id="3_lm1x5"]
 [ext_resource type="PackedScene" uid="uid://dta8sggu153ae" path="res://scenes/menu.tscn" id="5_kbuyp"]
 
 [sub_resource type="Theme" id="Theme_upo2c"]

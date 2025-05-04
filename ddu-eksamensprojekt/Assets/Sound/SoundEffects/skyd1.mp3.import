@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://uhg6qni1wljr"
-path="res://.godot/imported/skyd1.mp3-1bc390e1b9146b0a078df3cedcaaa977.mp3str"
+path="res://.godot/imported/skyd1.mp3-c034d322f474fabdd8ba95ec9a7ce448.mp3str"
 
 [deps]
 
-source_file="res://Assets/Sound/SoundEffects/skyd1.mp3"
-dest_files=["res://.godot/imported/skyd1.mp3-1bc390e1b9146b0a078df3cedcaaa977.mp3str"]
+source_file="res://assets/Sound/SoundEffects/skyd1.mp3"
+dest_files=["res://.godot/imported/skyd1.mp3-c034d322f474fabdd8ba95ec9a7ce448.mp3str"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_resource type="AudioStreamRandomizer" load_steps=4 format=3 uid="uid://b4mfs3m557v6r"]
 
-[ext_resource type="AudioStream" uid="uid://dw6xbt6r4s217" path="res://Assets/Sound/SoundEffects/av.mp3" id="1_hmhsx"]
-[ext_resource type="AudioStream" uid="uid://dgto17isdxmqo" path="res://Assets/Sound/SoundEffects/av2.mp3" id="2_077b0"]
-[ext_resource type="AudioStream" uid="uid://coj2y4vfav4me" path="res://Assets/Sound/SoundEffects/av3.mp3" id="3_isj34"]
+[ext_resource type="AudioStream" uid="uid://dw6xbt6r4s217" path="res://assets/Sound/SoundEffects/av.mp3" id="1_hmhsx"]
+[ext_resource type="AudioStream" uid="uid://dgto17isdxmqo" path="res://assets/Sound/SoundEffects/av2.mp3" id="2_077b0"]
+[ext_resource type="AudioStream" uid="uid://coj2y4vfav4me" path="res://assets/Sound/SoundEffects/av3.mp3" id="3_isj34"]
 
 [resource]
 streams_count = 3

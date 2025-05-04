@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://cvfuq5rh4fask"]
 
-[ext_resource type="Texture2D" uid="uid://c5y348adk4lrn" path="res://Assets/baggrunde/vaffel_baggrund.png" id="1_go5qk"]
+[ext_resource type="Texture2D" uid="uid://c5y348adk4lrn" path="res://assets/baggrunde/vaffel_baggrund.png" id="1_go5qk"]
 [ext_resource type="PackedScene" uid="uid://isdv4xg5cjr6" path="res://scenes/interface.tscn" id="1_iv0yu"]
 [ext_resource type="PackedScene" uid="uid://8cvn1kjkpbra" path="res://scenes/player_1.tscn" id="2_0rdaj"]
 [ext_resource type="PackedScene" uid="uid://mfq7kx45ml00" path="res://scenes/player_2.tscn" id="3_bixqg"]

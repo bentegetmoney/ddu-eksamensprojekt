@@ -31,7 +31,7 @@ portals=""
 
 [gui]
 
-theme/custom_font="res://Assets/Fonts/Milk Shake.otf"
+theme/custom_font="res://assets/Fonts/Milk Shake.otf"
 
 [input]
 

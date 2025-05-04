@@ -1,7 +1,7 @@
 [gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://bgxffsoaqajdi"]
 
-[ext_resource type="AudioStream" uid="uid://uhg6qni1wljr" path="res://Assets/Sound/SoundEffects/skyd1.mp3" id="1_mc7h4"]
-[ext_resource type="AudioStream" uid="uid://cckg3nv461uii" path="res://Assets/Sound/SoundEffects/skyd2.mp3" id="2_unspn"]
+[ext_resource type="AudioStream" uid="uid://uhg6qni1wljr" path="res://assets/Sound/SoundEffects/skyd1.mp3" id="1_mc7h4"]
+[ext_resource type="AudioStream" uid="uid://cckg3nv461uii" path="res://assets/Sound/SoundEffects/skyd2.mp3" id="2_unspn"]
 
 [resource]
 streams_count = 2

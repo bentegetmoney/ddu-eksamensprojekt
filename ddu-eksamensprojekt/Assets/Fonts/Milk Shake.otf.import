@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dkqbf2w6plvpv"
-path="res://.godot/imported/Milk Shake.otf-6844a008453a261e2fbda5e3309763a6.fontdata"
+path="res://.godot/imported/Milk Shake.otf-168de26751239abc993e89fec2757d06.fontdata"
 
 [deps]
 
-source_file="res://Assets/Fonts/Milk Shake.otf"
-dest_files=["res://.godot/imported/Milk Shake.otf-6844a008453a261e2fbda5e3309763a6.fontdata"]
+source_file="res://assets/Fonts/Milk Shake.otf"
+dest_files=["res://.godot/imported/Milk Shake.otf-168de26751239abc993e89fec2757d06.fontdata"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://8f2qkragy2xk"]
 
 [ext_resource type="Script" path="res://scripts/map_objects/ketchup.gd" id="1_i6mb1"]
-[ext_resource type="Texture2D" uid="uid://d3yma1xbea7et" path="res://Assets/map objects/ketchup.png" id="2_ukr1e"]
+[ext_resource type="Texture2D" uid="uid://d3yma1xbea7et" path="res://assets/map objects/ketchup.png" id="2_ukr1e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yhx3d"]
 radius = 47.0851

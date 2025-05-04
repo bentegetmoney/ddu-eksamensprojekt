@@ -1,9 +1,9 @@
 [gd_scene load_steps=8 format=3 uid="uid://dta8sggu153ae"]
 
-[ext_resource type="Script" path="res://Scripts/menu.gd" id="1_j45wb"]
-[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://Assets/Themes/startscreenHover.tres" id="1_ysq58"]
-[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="2_0onnu"]
-[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="3_miaou"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_j45wb"]
+[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://assets/Themes/startscreenHover.tres" id="1_ysq58"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://assets/Themes/startscreen.tres" id="2_0onnu"]
+[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://assets/Fonts/Milk Shake.otf" id="3_miaou"]
 
 [sub_resource type="Theme" id="Theme_6y3q1"]
 default_font = ExtResource("3_miaou")

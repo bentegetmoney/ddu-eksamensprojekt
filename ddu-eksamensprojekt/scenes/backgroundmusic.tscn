@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://de0j4afsi7fdl"]
 
-[ext_resource type="AudioStream" uid="uid://brelvcmy74h4c" path="res://Assets/Sound/Music/happy-333069.mp3" id="1_vo80r"]
-[ext_resource type="Script" path="res://Scripts/backgroundmusic.gd" id="2_hbjic"]
+[ext_resource type="AudioStream" uid="uid://brelvcmy74h4c" path="res://assets/Sound/Music/happy-333069.mp3" id="1_vo80r"]
+[ext_resource type="Script" path="res://scripts/backgroundmusic.gd" id="2_hbjic"]
 
 [node name="Backgroundmusic" type="AudioStreamPlayer"]
 stream = ExtResource("1_vo80r")
