@@ -1,13 +1,13 @@
 extends CharacterBody2D
 
-var blå_shader = preload("res://Assets/shaders/blå.gdshader")
-var grøn_shader = preload("res://Assets/shaders/grøn.gdshader")
-var gul_shader = preload("res://Assets/shaders/gul.gdshader")
-var lilla_shader = preload("res://Assets/shaders/lilla.gdshader")
-var orange_shader = preload("res://Assets/shaders/orange.gdshader")
-var pink_shader = preload("res://Assets/shaders/pink.gdshader")
-var rød_shader = preload("res://Assets/shaders/rød.gdshader")
-var hvid_shader = preload("res://Assets/shaders/hvid.gdshader")
+var blå_shader = preload("res://assets/shaders/blå.gdshader")
+var grøn_shader = preload("res://assets/shaders/grøn.gdshader")
+var gul_shader = preload("res://assets/shaders/gul.gdshader")
+var lilla_shader = preload("res://assets/shaders/lilla.gdshader")
+var orange_shader = preload("res://assets/shaders/orange.gdshader")
+var pink_shader = preload("res://assets/shaders/pink.gdshader")
+var rød_shader = preload("res://assets/shaders/rød.gdshader")
+var hvid_shader = preload("res://assets/shaders/hvid.gdshader")
 
 var database : SQLite
 var is_charging: bool = false

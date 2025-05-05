@@ -4,6 +4,6 @@ extends CanvasLayer
 @onready var lbl2 = $pl2/Sprite2D/Label
 var done = false
 
-func _process(delta: float) -> void:
+func _process(_delta) -> void:
 	lbl1.text = "Liv: " + str(Global.hit1)
 	lbl2.text = "Liv:" + str(Global.hit2)

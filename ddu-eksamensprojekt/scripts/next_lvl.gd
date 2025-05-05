@@ -5,9 +5,8 @@ var started = false
 var stage = 0 #de lodrette levels. dem er der 3 af (eller måske kun 2 i vores spil)
 var level = 3 #her er de vandrette levels. der er 5 levels pr. stage Jeg sætter den i midten til 3 så det måske er nememre at skifte.. ved ik om der vil være problemer med -
 const FILE_BEGIN = "res://scenes/level"
-#labels
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	#her skiftes banerne og der sker animation.
 	if started == false:
 		if Global.hit1<=0:
