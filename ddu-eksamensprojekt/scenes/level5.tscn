@@ -25,15 +25,15 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="player1" parent="." instance=ExtResource("1_iwlv5")]
-position = Vector2(392, 287)
+position = Vector2(782, 441)
 
 [node name="player2" parent="." instance=ExtResource("2_r58jp")]
-position = Vector2(863, 411)
+position = Vector2(1168, 408)
 
 [node name="interface" parent="." instance=ExtResource("3_c016l")]
 
 [node name="ketchup" parent="." instance=ExtResource("4_7i6c7")]
-position = Vector2(697, 205)
+position = Vector2(888, 294)
 scale = Vector2(0.570313, 0.945205)
 
 [node name="nextLvl" parent="." instance=ExtResource("5_rjkaf")]

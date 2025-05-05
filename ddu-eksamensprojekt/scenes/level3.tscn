@@ -41,3 +41,4 @@ position = Vector2(1058, 595)
 
 [node name="icecream" parent="." instance=ExtResource("6_s7ppo")]
 position = Vector2(840, 430)
+scale = Vector2(1.50562, 1.42752)
