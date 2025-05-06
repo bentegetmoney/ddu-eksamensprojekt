@@ -11,6 +11,8 @@ func _on_popup_menu_id_pressed(id):
 		0: #fortsæt
 			pop.hide()
 		1: #Startskærm
+			Global.level = 3
 			get_tree().change_scene_to_file("res://scenes/startscreen.tscn")
 		2: #luk spil
+			Global.level = 3
 			get_tree().quit()
