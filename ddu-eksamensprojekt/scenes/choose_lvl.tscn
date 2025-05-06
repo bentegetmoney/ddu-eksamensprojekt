@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://ct0caualvrgit"]
 
 [ext_resource type="Script" path="res://scenes/SQLcontroller.gd" id="1_4jie1"]
-[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://assets/Themes/startscreenHover.tres" id="2_hcx16"]
-[ext_resource type="Texture2D" uid="uid://c8kprsn0j2rsn" path="res://assets/UI sprites/farvevalg.png" id="3_jr6xt"]
-[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://assets/Themes/startscreen.tres" id="3_uwx1v"]
-[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://assets/Fonts/Milk Shake.otf" id="4_y314y"]
+[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://Assets/Themes/startscreenHover.tres" id="2_hcx16"]
+[ext_resource type="Texture2D" uid="uid://c8kprsn0j2rsn" path="res://Assets/UI sprites/farvevalg.png" id="3_jr6xt"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="3_uwx1v"]
+[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="4_y314y"]
 
 [sub_resource type="Theme" id="Theme_femjh"]
 Button/styles/hover = ExtResource("2_hcx16")

@@ -3,12 +3,12 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://brelvcmy74h4c"
-path="res://.godot/imported/happy-333069.mp3-3d0c96809768d2ff49d73f9d8b6d6251.mp3str"
+path="res://.godot/imported/happy-333069.mp3-695c043a03b5eef23f77f4b8fca7473f.mp3str"
 
 [deps]
 
-source_file="res://assets/Sound/Music/happy-333069.mp3"
-dest_files=["res://.godot/imported/happy-333069.mp3-3d0c96809768d2ff49d73f9d8b6d6251.mp3str"]
+source_file="res://Assets/Sound/Music/happy-333069.mp3"
+dest_files=["res://.godot/imported/happy-333069.mp3-695c043a03b5eef23f77f4b8fca7473f.mp3str"]
 
 [params]
 
