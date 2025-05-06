@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhgywrawuwhbd"
-path="res://.godot/imported/Bla_Win.png-83b6ad38fcd70ee6c1a98600fd0ee204.ctex"
+path="res://.godot/imported/Bla_Win.png-0336cd43650211fd592e58e1e556f7f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI sprites/Bla_Win.png"
-dest_files=["res://.godot/imported/Bla_Win.png-83b6ad38fcd70ee6c1a98600fd0ee204.ctex"]
+source_file="res://assets/UI sprites/Bla_Win.png"
+dest_files=["res://.godot/imported/Bla_Win.png-0336cd43650211fd592e58e1e556f7f2.ctex"]
 
 [params]
 

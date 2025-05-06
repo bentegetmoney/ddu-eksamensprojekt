@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://d8eogw5g068q"]
 
 [ext_resource type="Script" path="res://scripts/startscreen.gd" id="1_5objy"]
-[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://Assets/Themes/startscreenHover.tres" id="2_pm5s8"]
-[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://Assets/Themes/startscreen.tres" id="2_y8so7"]
-[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://Assets/Fonts/Milk Shake.otf" id="3_8xpi0"]
+[ext_resource type="StyleBox" uid="uid://bcv65lcomxym6" path="res://assets/Themes/startscreenHover.tres" id="2_pm5s8"]
+[ext_resource type="StyleBox" uid="uid://p5kgj53dkxd8" path="res://assets/Themes/startscreen.tres" id="2_y8so7"]
+[ext_resource type="FontFile" uid="uid://dkqbf2w6plvpv" path="res://assets/Fonts/Milk Shake.otf" id="3_8xpi0"]
 
 [sub_resource type="Theme" id="Theme_exre7"]
 Button/styles/hover = ExtResource("2_pm5s8")
@@ -20,8 +20,8 @@ script = ExtResource("1_5objy")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 66.0
+offset_bottom = 56.0
 scale = Vector2(50.5565, 33.8116)
 color = Color(0.356863, 0.752941, 0.921569, 1)
 

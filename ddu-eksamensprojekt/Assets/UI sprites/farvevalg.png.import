@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8kprsn0j2rsn"
-path="res://.godot/imported/farvevalg.png-e8b7a89b905cf29fb45d03e4120ca2c7.ctex"
+path="res://.godot/imported/farvevalg.png-c21ff810e7a0b71d5ade8a13dea075ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UI sprites/farvevalg.png"
-dest_files=["res://.godot/imported/farvevalg.png-e8b7a89b905cf29fb45d03e4120ca2c7.ctex"]
+source_file="res://assets/UI sprites/farvevalg.png"
+dest_files=["res://.godot/imported/farvevalg.png-c21ff810e7a0b71d5ade8a13dea075ca.ctex"]
 
 [params]
 
