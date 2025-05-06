@@ -1,0 +1,164 @@
+<mxfile host="Electron" modified="2025-03-03T14:11:03.381Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="Lswv8iTs1m_Q2KIvHBBB" version="24.4.0" type="device">
+  <diagram name="Side-1" id="5e3sIhu67GRDYIcQC-RR">
+    <mxGraphModel dx="1398" dy="2021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-1" target="vnoUHpw2y4g6mfWFo0FU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-1" target="vnoUHpw2y4g6mfWFo0FU-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-28" target="vnoUHpw2y4g6mfWFo0FU-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-1" target="vnoUHpw2y4g6mfWFo0FU-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-1" value="&lt;p style=&quot;text-align:center&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;a name=&quot;_Hlk191902362&quot;&gt;&lt;b&gt;&lt;i&gt;Det er et problem, at ubehagelige kommentarer i&lt;br&gt;konkurrencedrevne spil skræmmer unge piger i alderen 12-14 år væk fra&lt;br&gt;computerspil.&lt;/i&gt;&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="350" y="240" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-2" target="vnoUHpw2y4g6mfWFo0FU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-2" target="vnoUHpw2y4g6mfWFo0FU-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-2" target="vnoUHpw2y4g6mfWFo0FU-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-2" target="vnoUHpw2y4g6mfWFo0FU-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-2" value="Piger tør ikke at spille online computerspil" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-4" target="vnoUHpw2y4g6mfWFo0FU-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-4" value="Negative fordomme og sterotyper" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-5" target="vnoUHpw2y4g6mfWFo0FU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-5" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Sexistiske og hadefulde kommentarer&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-8" target="vnoUHpw2y4g6mfWFo0FU-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-8" value="Manglende censur" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-11" target="vnoUHpw2y4g6mfWFo0FU-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-11" value="Sociale normer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-12" target="vnoUHpw2y4g6mfWFo0FU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-12" value="Gaming ses som noget mandligt" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-15" target="vnoUHpw2y4g6mfWFo0FU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-15" value="Konkurrence" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-16" target="vnoUHpw2y4g6mfWFo0FU-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-16" value="Prestationspræs" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-18" target="vnoUHpw2y4g6mfWFo0FU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-18" value="Aggresiv adfærd" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-20" target="vnoUHpw2y4g6mfWFo0FU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-20" value="Svært at indfiltrere som ny spiller" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-23" value="Piger trækker sig fra gaming og går glip af fællesskabet" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-26" value="Færre kvinder til spiludvikling og esports" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-30" value="Mindre selvtillid" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="-70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-32" value="Piger spiller kun alene og bliver ensomme" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-34" target="vnoUHpw2y4g6mfWFo0FU-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-34" value="Børn bliver negativt påvirket af dårlig adfærd i spil" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-36" value="Børn vender sig til at tale dårligt" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="-60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vnoUHpw2y4g6mfWFo0FU-1" target="vnoUHpw2y4g6mfWFo0FU-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="240" as="sourcePoint" />
+            <mxPoint x="680" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-28" value="Fremmer kønsopdeling i gaming" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-39" value="Årsager" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="770" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-40" value="Nøgleproblem" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="770" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-41" value="Virkninger" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="770" y="-10" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vnoUHpw2y4g6mfWFo0FU-42" value="" style="endArrow=none;html=1;rounded=0;curved=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="710" as="sourcePoint" />
+            <mxPoint x="730" y="710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="510" />
+              <mxPoint x="730" y="340" />
+              <mxPoint x="640" y="220" />
+              <mxPoint x="440" y="220" />
+              <mxPoint x="420" y="130" />
+              <mxPoint x="390" y="90" />
+              <mxPoint x="340" y="20" />
+              <mxPoint x="320" y="-20" />
+              <mxPoint x="210" y="-40" />
+              <mxPoint x="160" y="-10" />
+              <mxPoint x="100" y="60" />
+              <mxPoint x="90" y="120" />
+              <mxPoint x="110" y="200" />
+              <mxPoint x="290" y="240" />
+              <mxPoint x="330" y="360" />
+              <mxPoint x="480" y="360" />
+              <mxPoint x="570" y="400" />
+              <mxPoint x="570" y="520" />
+              <mxPoint x="560" y="690" />
+              <mxPoint x="590" y="760" />
+              <mxPoint x="700" y="760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
