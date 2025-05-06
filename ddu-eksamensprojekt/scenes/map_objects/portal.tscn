@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/map_objects/portal.gd" id="1_nm4g6"]
 [ext_resource type="Texture2D" uid="uid://bp58juwi750d2" path="res://assets/map objects/portal.png" id="2_kidhn"]
-[ext_resource type="AudioStream" uid="uid://dfjimv3jagqnf" path="res://assets/Sound/SoundEffects/portal.mp3" id="3_7xp41"]
+[ext_resource type="AudioStream" uid="uid://bj5qiskco5oh6" path="res://assets/Sound/SoundEffects/portal.mp3" id="3_7xp41"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y8e6p"]
 radius = 58.1942
@@ -21,6 +21,7 @@ shape = SubResource("CircleShape2D_y8e6p")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_7xp41")
+pitch_scale = 0.7
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
