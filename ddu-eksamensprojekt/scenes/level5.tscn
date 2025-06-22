@@ -41,9 +41,13 @@ scale = Vector2(2.52823, 2.53962)
 
 [node name="portal" parent="." instance=ExtResource("7_u6ou3")]
 position = Vector2(642, 760)
+portal_id = "A"
+target_portal_id = "B"
 
 [node name="portal2" parent="." instance=ExtResource("7_u6ou3")]
 position = Vector2(882, 148)
+portal_id = "B"
+target_portal_id = "A"
 
 [node name="icecream2" parent="." instance=ExtResource("6_xkmt2")]
 position = Vector2(717, 307)
